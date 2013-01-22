@@ -67,6 +67,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abea557cae19598bbd6ec7f1396602047"><td class="mdescLeft">&#160;</td><td class="mdescRight">It returns the input (or domain) size of the function.  <a href="#abea557cae19598bbd6ec7f1396602047"></a><br/></td></tr>
 <tr class="memitem:a9c00e3561e8fef17d030f92136752a17"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a9c00e3561e8fef17d030f92136752a17">getOutputSize</a> () const </td></tr>
 <tr class="memdesc:a9c00e3561e8fef17d030f92136752a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">It returns the output (or range) size of the function.  <a href="#a9c00e3561e8fef17d030f92136752a17"></a><br/></td></tr>
+<<<<<<< Updated upstream
+=======
+<tr class="memitem:a8f90ca2c8e3d2bc122b64623bbeaff4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classANN_1_1Connections.html">Connections</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a8f90ca2c8e3d2bc122b64623bbeaff4c">getLayerConnections</a> (unsigned int layer)</td></tr>
+<tr class="memitem:a8166192a2a695add33dcdb860bc6fdc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classANN_1_1ActivationUnits.html">ActivationUnits</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a8166192a2a695add33dcdb860bc6fdc9">getLayerActivations</a> (unsigned int layer)</td></tr>
+>>>>>>> Stashed changes
 <tr class="memitem:a4adc9d743cabdf8b131e0c1d6af0fd4d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a4adc9d743cabdf8b131e0c1d6af0fd4d">setInput</a> (const float *input, unsigned int bunch_pos)</td></tr>
 <tr class="memitem:a44d1a8bcc5b0a8a1bab3a68044d30cee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a44d1a8bcc5b0a8a1bab3a68044d30cee">copyOutput</a> (float *output, unsigned int bunch_pos)</td></tr>
 <tr class="memitem:a9152391cd3d73b13e0e294002702579f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a9152391cd3d73b13e0e294002702579f">setDesiredOutput</a> (float *target_output, unsigned int bunch_pos)</td></tr>
@@ -503,6 +508,45 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<<<<<<< Updated upstream
+=======
+<a class="anchor" id="a8166192a2a695add33dcdb860bc6fdc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classANN_1_1ActivationUnits.html">ActivationUnits</a> * ANN::ANNBase::getLayerActivations </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>layer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classANN_1_1ANNBase.html#ad775c11dc271983b744b3227af6d3a01">activations</a>, and <a class="el" href="group__util.html#ga67ef1a4a9e547e0d05a132d5eebc8355">ERROR_PRINT</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f90ca2c8e3d2bc122b64623bbeaff4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classANN_1_1Connections.html">Connections</a> * ANN::ANNBase::getLayerConnections </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>layer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classANN_1_1ANNBase.html#a2ba3ea25774a683202a670e076d46226">connections</a>, and <a class="el" href="group__util.html#ga67ef1a4a9e547e0d05a132d5eebc8355">ERROR_PRINT</a>.</p>
+
+</div>
+</div>
+>>>>>>> Stashed changes
 <a class="anchor" id="a53f1bf843d01312ce25a3ae4fdc07ccf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -987,7 +1031,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<<<<<<< Updated upstream
 <p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#aa783daca79d12078db8f90467626c694">ANN::AllAllMLP::copyWeightsToMatrix()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a656b13b8f8c0407903d3c8fa5c63f064">ANN::AllAllMLP::generateAllAll()</a>, <a class="el" href="classANN_1_1ANNBase.html#aa396b9917e60bb8332c79f68977a5328">registerActivationUnits()</a>, <a class="el" href="classANN_1_1ANNBase.html#a932d47c34d5ff40a83e326af71ce1111">resetErrorVectors()</a>, <a class="el" href="classANN_1_1MLP.html#a9ea5f5783e525a6864a4f7af9bf0057c">ANN::MLP::showActivations()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
+=======
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#aa783daca79d12078db8f90467626c694">ANN::AllAllMLP::copyWeightsToMatrix()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a656b13b8f8c0407903d3c8fa5c63f064">ANN::AllAllMLP::generateAllAll()</a>, <a class="el" href="classANN_1_1ANNBase.html#a8166192a2a695add33dcdb860bc6fdc9">getLayerActivations()</a>, <a class="el" href="classANN_1_1ANNBase.html#aa396b9917e60bb8332c79f68977a5328">registerActivationUnits()</a>, <a class="el" href="classANN_1_1ANNBase.html#a932d47c34d5ff40a83e326af71ce1111">resetErrorVectors()</a>, <a class="el" href="classANN_1_1MLP.html#a9ea5f5783e525a6864a4f7af9bf0057c">ANN::MLP::showActivations()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -1031,7 +1079,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<<<<<<< Updated upstream
 <p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#aa783daca79d12078db8f90467626c694">ANN::AllAllMLP::copyWeightsToMatrix()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a656b13b8f8c0407903d3c8fa5c63f064">ANN::AllAllMLP::generateAllAll()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#ad9057b40352b96e99217397ea64eb307">ANN::AllAllMLP::getLayerConnections()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#aaeec4bebbfca13bf61c1e64958e8a6ea">ANN::AllAllMLP::getNumberOfWeights()</a>, <a class="el" href="classANN_1_1MLP.html#a0cd4a4eb7fcc95096948b74631ca2c07">ANN::MLP::getNumWeights()</a>, <a class="el" href="classANN_1_1ANNBase.html#a9a01f0686be40d643a6530c933638067">pruneSubnormalAndCheckNormal()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#aa00e07e6f7aed2a44a695fe53bee08ea">ANN::AllAllMLP::randomizeWeights()</a>, <a class="el" href="classANN_1_1MLP.html#a3fb3b10f04dcb822d5ee67b39e6a483c">ANN::MLP::randomizeWeights()</a>, <a class="el" href="classANN_1_1ANNBase.html#a3b707a80c52d98cb37b16c0a2511f233">registerConnections()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
+=======
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#aa783daca79d12078db8f90467626c694">ANN::AllAllMLP::copyWeightsToMatrix()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a656b13b8f8c0407903d3c8fa5c63f064">ANN::AllAllMLP::generateAllAll()</a>, <a class="el" href="classANN_1_1ANNBase.html#a8f90ca2c8e3d2bc122b64623bbeaff4c">getLayerConnections()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#aaeec4bebbfca13bf61c1e64958e8a6ea">ANN::AllAllMLP::getNumberOfWeights()</a>, <a class="el" href="classANN_1_1MLP.html#a0cd4a4eb7fcc95096948b74631ca2c07">ANN::MLP::getNumWeights()</a>, <a class="el" href="classANN_1_1ANNBase.html#a9a01f0686be40d643a6530c933638067">pruneSubnormalAndCheckNormal()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#aa00e07e6f7aed2a44a695fe53bee08ea">ANN::AllAllMLP::randomizeWeights()</a>, <a class="el" href="classANN_1_1MLP.html#a3fb3b10f04dcb822d5ee67b39e6a483c">ANN::MLP::randomizeWeights()</a>, <a class="el" href="classANN_1_1ANNBase.html#a3b707a80c52d98cb37b16c0a2511f233">registerConnections()</a>, <a class="el" href="classANN_1_1MLP.html#a2a24041973e3ee0c41c9b5f07e0038e8">ANN::MLP::showWeights()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
+>>>>>>> Stashed changes
 
 </div>
 </div>

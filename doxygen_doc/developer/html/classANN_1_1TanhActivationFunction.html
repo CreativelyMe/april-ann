@@ -263,10 +263,17 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">input_errors</td><td>an input matrix of size (size X conf.cur_bunch_size). It is stored at an FloatGPUMirroredMemoryBlock object. Each component is a sum of error derivatives that comes from the output layer neurons to the current neuron.</td></tr>
     <tr><td class="paramname">size</td><td>an unsigned int parameter indicating the number of neurons.</td></tr>
     <tr><td class="paramname">conf</td><td>an <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> reference which stores some global parameters as: current bunch size, maximum bunch size, use_cuda global flag, ...</td></tr>
+<<<<<<< Updated upstream
   </table>
   </dd>
 </dl>
 <p>use_cuda a boolean flag indicating the use of CPU computation or GPU computation (using CUDA). Overrides the configuration stored at conf parameter. </p>
+=======
+    <tr><td class="paramname">use_cuda</td><td>a boolean flag indicating the use of CPU computation or GPU computation (using CUDA). Overrides the configuration stored at conf parameter. </td></tr>
+  </table>
+  </dd>
+</dl>
+>>>>>>> Stashed changes
 
 <p>Implements <a class="el" href="classANN_1_1ActivationFunction.html#a4fb09b640d7f797f6948fe6e4beda4fb">ANN::ActivationFunction</a>.</p>
 
