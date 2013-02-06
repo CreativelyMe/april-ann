@@ -64,6 +64,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf38628ad9ce30624201b4fcd9965841"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ForwardBiasAction.html#acf38628ad9ce30624201b4fcd9965841">setOption</a> (const char *name, double value)</td></tr>
 <tr class="memitem:a7e251f9917d49954886921bf2eaa0804"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ForwardBiasAction.html#a7e251f9917d49954886921bf2eaa0804">hasOption</a> (const char *name)</td></tr>
 <tr class="memitem:a76341678fd059e35f55f6cd64dea5840"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ForwardBiasAction.html#a76341678fd059e35f55f6cd64dea5840">getOption</a> (const char *name)</td></tr>
+<tr class="memitem:a883799807a2f97bdf99448def63ae6fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ForwardBiasAction.html#a883799807a2f97bdf99448def63ae6fd">transferFanInToConnections</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classANN_1_1Action"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classANN_1_1Action')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classANN_1_1Action.html">ANN::Action</a></td></tr>
 <tr class="memitem:ae81df765b78b3b2a60ebe2314f27d69f inherit pub_methods_classANN_1_1Action"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Action.html#ae81df765b78b3b2a60ebe2314f27d69f">Action</a> (const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;<a class="el" href="classANN_1_1Action.html#a6ebba29fff71094613918fd61f15bbac">conf</a>)</td></tr>
 <tr class="memitem:a688b4f3880be9e0f0fe1eccd745006a9 inherit pub_methods_classANN_1_1Action"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Action.html#a688b4f3880be9e0f0fe1eccd745006a9">~Action</a> ()</td></tr>
@@ -116,7 +117,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classANN_1_1Connections.html#ac4ca23b3284a019c84e90242a5fcb782">ANN::Connections::checkInputOutputSizes()</a>, <a class="el" href="classANN_1_1Connections.html#aaa5555ec34ff46523b469cfeb470cf7f">ANN::Connections::countReference()</a>, <a class="el" href="group__util.html#ga7c141183788078513c128e5f0bb15f48">ERROR_EXIT</a>, and <a class="el" href="group__util.html#gaee8c908dd2bea7674e4c19493005ce68">IncRef</a>.</p>
+<p>References <a class="el" href="classANN_1_1Connections.html#ac4ca23b3284a019c84e90242a5fcb782">ANN::Connections::checkInputOutputSizes()</a>, <a class="el" href="classANN_1_1Connections.html#aaa5555ec34ff46523b469cfeb470cf7f">ANN::Connections::countReference()</a>, <a class="el" href="group__util.html#ga7c141183788078513c128e5f0bb15f48">ERROR_EXIT</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a940de518e3b1c7eb51a6312d366fe886">ANN::ActivationUnits::increaseFanIn()</a>, and <a class="el" href="group__util.html#gaee8c908dd2bea7674e4c19493005ce68">IncRef</a>.</p>
 
 <p>Referenced by <a class="el" href="classANN_1_1ForwardBiasAction.html#a4a28e068602b5b6017b16c55df467428">clone()</a>.</p>
 
@@ -334,6 +335,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a883799807a2f97bdf99448def63ae6fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ANN::ForwardBiasAction::transferFanInToConnections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classANN_1_1Action.html#a18da86446bdd083a335fdfb484328525">ANN::Action</a>.</p>
+
+<p>References <a class="el" href="classANN_1_1ForwardBiasAction.html#a5d42fe52cfd1633405ea634b2ed48289">bias_vector</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a5560f61e016d264cd1c9385f254b6ac1">ANN::ActivationUnits::getFanIn()</a>, <a class="el" href="classANN_1_1ForwardBiasAction.html#ae6dbb1a2303bd4a13be57d7b95203469">outputs</a>, and <a class="el" href="classANN_1_1Connections.html#a42ff0697dd3cedf0a905619b074a6c3e">ANN::Connections::setFanIn()</a>.</p>
+
+</div>
+</div>
 <h2>Member Data Documentation</h2>
 <a class="anchor" id="a5d42fe52cfd1633405ea634b2ed48289"></a>
 <div class="memitem">
@@ -353,7 +381,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1ForwardBiasAction.html#a4a28e068602b5b6017b16c55df467428">clone()</a>, <a class="el" href="classANN_1_1ForwardBiasAction.html#a0864cced7bbce5bd1e0334309c155f21">doBackward()</a>, <a class="el" href="classANN_1_1ForwardBiasAction.html#ac62f1139140b3c765888f3268bccf6a8">doForward()</a>, and <a class="el" href="classANN_1_1ForwardBiasAction.html#a012eb45fa87a7b5adbf424f8d762ea9d">~ForwardBiasAction()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ForwardBiasAction.html#a4a28e068602b5b6017b16c55df467428">clone()</a>, <a class="el" href="classANN_1_1ForwardBiasAction.html#a0864cced7bbce5bd1e0334309c155f21">doBackward()</a>, <a class="el" href="classANN_1_1ForwardBiasAction.html#ac62f1139140b3c765888f3268bccf6a8">doForward()</a>, <a class="el" href="classANN_1_1ForwardBiasAction.html#a883799807a2f97bdf99448def63ae6fd">transferFanInToConnections()</a>, and <a class="el" href="classANN_1_1ForwardBiasAction.html#a012eb45fa87a7b5adbf424f8d762ea9d">~ForwardBiasAction()</a>.</p>
 
 </div>
 </div>
@@ -419,7 +447,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1ForwardBiasAction.html#a4a28e068602b5b6017b16c55df467428">clone()</a>, <a class="el" href="classANN_1_1ForwardBiasAction.html#a0864cced7bbce5bd1e0334309c155f21">doBackward()</a>, <a class="el" href="classANN_1_1ForwardBiasAction.html#ac62f1139140b3c765888f3268bccf6a8">doForward()</a>, and <a class="el" href="classANN_1_1ForwardBiasAction.html#a012eb45fa87a7b5adbf424f8d762ea9d">~ForwardBiasAction()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ForwardBiasAction.html#a4a28e068602b5b6017b16c55df467428">clone()</a>, <a class="el" href="classANN_1_1ForwardBiasAction.html#a0864cced7bbce5bd1e0334309c155f21">doBackward()</a>, <a class="el" href="classANN_1_1ForwardBiasAction.html#ac62f1139140b3c765888f3268bccf6a8">doForward()</a>, <a class="el" href="classANN_1_1ForwardBiasAction.html#a883799807a2f97bdf99448def63ae6fd">transferFanInToConnections()</a>, and <a class="el" href="classANN_1_1ForwardBiasAction.html#a012eb45fa87a7b5adbf424f8d762ea9d">~ForwardBiasAction()</a>.</p>
 
 </div>
 </div>

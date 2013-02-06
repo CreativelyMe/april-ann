@@ -51,8 +51,11 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:gad0e9ba2ff221d15635fcee792c2e3667"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#gad0e9ba2ff221d15635fcee792c2e3667">VECTOR_SSET</a>(n, value, vec, step)&#160;&#160;&#160;catlas_sset((n), (value), (vec), (step))</td></tr>
 <tr class="memitem:gaeda11729879e85c9ef67ec646cd0d804"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#gaeda11729879e85c9ef67ec646cd0d804">VECTOR_DSET</a>(n, value, vec, step)&#160;&#160;&#160;catlas_dset((n), (value), (vec), (step))</td></tr>
-<tr class="memitem:gaa82721cfddefc166d37d08b4b6929a07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#gaa82721cfddefc166d37d08b4b6929a07">NEAR_ZERO</a>&#160;&#160;&#160;1e-20f</td></tr>
+<tr class="memitem:gaa82721cfddefc166d37d08b4b6929a07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#gaa82721cfddefc166d37d08b4b6929a07">NEAR_ZERO</a>&#160;&#160;&#160;1e-5f</td></tr>
 <tr class="memitem:ga48c1622948a37b3d8bce4c1bc73b8627"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga48c1622948a37b3d8bce4c1bc73b8627">DERIVATIVE_SATURATION</a>&#160;&#160;&#160;17.0f</td></tr>
+<tr class="memitem:gae42154bb9087c065e409ddee2a5ac93d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#gae42154bb9087c065e409ddee2a5ac93d">sigmoid</a>(numerator, value)&#160;&#160;&#160;(numerator) / (exp(-(value))+1.0f)</td></tr>
+<tr class="memitem:ga80679f90f26951b40fe9abc30bcb8bb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga80679f90f26951b40fe9abc30bcb8bb6">getMatrixFlatIndex</a>(x, lda, y)&#160;&#160;&#160;((x)+(y)*(lda))</td></tr>
+<tr class="memitem:gac83f1a82f1330398953fe34317acb593"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#gac83f1a82f1330398953fe34317acb593">getMatrixIndex</a>(x, lda, y)&#160;&#160;&#160;((x)*(lda)+(y))</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -66,19 +69,19 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf6a2e80510fa2d13edb4c64e2ea00eb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#gaf6a2e80510fa2d13edb4c64e2ea00eb4">doApplyTanhActivation</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *units, unsigned int units_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
 <tr class="memitem:ga6c0c60ff472ce9619096cac86654ea96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga6c0c60ff472ce9619096cac86654ea96">doMultiplyTanhDerivatives</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *units, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *input_errors, unsigned int units_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
 <tr class="memitem:ga67da17e055003f63ff3720cb8394728d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga67da17e055003f63ff3720cb8394728d">doApplySoftmaxActivation</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *units, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *minimums, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *maximums, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *sums, unsigned int units_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
-<tr class="memitem:gaac3aab201b7b4707e25c3ec1c7a3d02a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#gaac3aab201b7b4707e25c3ec1c7a3d02a">doCalculateMSE</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *target_output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output_error, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *pattern_errors, float zero_epsilon_distance, unsigned int output_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
-<tr class="memitem:gaa03e710479ad61df1336788f85d60fbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#gaa03e710479ad61df1336788f85d60fbe">doCalculateTanh</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *target_output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output_error, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *pattern_errors, unsigned int output_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
-<tr class="memitem:ga257d73303e73c2f6281647ae8a219196"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga257d73303e73c2f6281647ae8a219196">doCalculateLocalFMeasure</a> (float alpha, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *target_output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output_error, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *pattern_errors, unsigned int output_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
-<tr class="memitem:ga92a7b230e647e7018884b336fcfe066f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga92a7b230e647e7018884b336fcfe066f">doCalculateCrossEntropy</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *target_output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output_error, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *pattern_errors, float EPSILON, float INF, unsigned int output_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
-<tr class="memitem:ga740df434af0a655eb31179eb1b86d7d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga740df434af0a655eb31179eb1b86d7d2">doCalculateFullCrossEntropy</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *target_output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output_error, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *pattern_errors, float EPSILON, float INF, unsigned int output_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
+<tr class="memitem:ga75458168db9788b503e65f617dd5167c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga75458168db9788b503e65f617dd5167c">doCalculateMSEErrorFunction</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *target_output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output_error, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *pattern_errors, float zero_epsilon_distance, unsigned int output_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
+<tr class="memitem:gadf0110c427020eb6dc2697e17707cd5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#gadf0110c427020eb6dc2697e17707cd5d">doCalculateTanhErrorFunction</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *target_output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output_error, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *pattern_errors, unsigned int output_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
+<tr class="memitem:ga49e8c8dd5417e4d1cca7751726a3f16b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga49e8c8dd5417e4d1cca7751726a3f16b">doCalculateLocalFMeasureErrorFunction</a> (float alpha, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *target_output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output_error, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *pattern_errors, unsigned int output_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
+<tr class="memitem:ga66d0316f1133e21a33be23a7df6aef65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga66d0316f1133e21a33be23a7df6aef65">doCalculateCrossEntropyErrorFunction</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *target_output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output_error, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *pattern_errors, float EPSILON, float INF, unsigned int output_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
+<tr class="memitem:gabe0cfe4557b4cbcda43828ccb2342d80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#gabe0cfe4557b4cbcda43828ccb2342d80">doCalculateLogisticCrossEntropyErrorFunction</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *target_output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output_error, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *pattern_errors, float EPSILON, float INF, unsigned int output_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
+<tr class="memitem:ga234b695c80edc2d2fdc55b90d05b8809"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga234b695c80edc2d2fdc55b90d05b8809">doCalculateFullCrossEntropyErrorFunction</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *target_output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output_error, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *pattern_errors, float EPSILON, float INF, unsigned int output_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
+<tr class="memitem:ga17ee644f7c35db2e8e7f35d44935f27e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga17ee644f7c35db2e8e7f35d44935f27e">doCalculateFullLogisticCrossEntropyErrorFunction</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *target_output, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *output_error, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *pattern_errors, float EPSILON, float INF, unsigned int output_size, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;conf, bool use_gpu)</td></tr>
 <tr class="memitem:ga096eb9e028918d1b6170244bfbb9db12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga096eb9e028918d1b6170244bfbb9db12">doSgemv</a> (CBLAS_ORDER major_type, CBLAS_TRANSPOSE a_transpose, int m, int n, float alpha, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *a, unsigned int a_inc, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *x, unsigned int x_inc, float beta, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *y, unsigned int y_inc, unsigned int a_shift, unsigned int x_shift, unsigned int y_shift, bool use_gpu)</td></tr>
 <tr class="memitem:ga465ca9d24f8dc92bdcaf9a5f7f0d10d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga465ca9d24f8dc92bdcaf9a5f7f0d10d9">doScopy</a> (int N, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *x, unsigned int x_shift, unsigned int x_inc, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *y, unsigned int y_shift, unsigned int y_inc, bool use_gpu)</td></tr>
 <tr class="memitem:ga4aa04d20d4ce5c85eaa7693474959679"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga4aa04d20d4ce5c85eaa7693474959679">doScopyLoop</a> (int N, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *x, unsigned int x_inc, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *y, unsigned int y_inc, unsigned int times, const unsigned int stride, bool use_gpu)</td></tr>
 <tr class="memitem:ga506b8bdedf5f8fa88c73f4d27205280a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga506b8bdedf5f8fa88c73f4d27205280a">doSaxpy</a> (int N, float alpha, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *x, unsigned int x_shift, unsigned int x_inc, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *y, unsigned int y_shift, unsigned int y_inc, bool use_gpu)</td></tr>
 <tr class="memitem:ga381150d28d89bed2e15d87cd72b27608"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga381150d28d89bed2e15d87cd72b27608">doSaxpyLoop</a> (int N, float alpha, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *x, unsigned int x_inc, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *y, unsigned int y_inc, unsigned int times, const unsigned int stride, bool use_gpu)</td></tr>
 <tr class="memitem:ga2d92297df165198d09d368140dead7e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga2d92297df165198d09d368140dead7e8">doSgemm</a> (CBLAS_ORDER major_type, CBLAS_TRANSPOSE a_transpose, CBLAS_TRANSPOSE b_transpose, int m, int n, int k, float alpha, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *a, unsigned int a_inc, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *b, unsigned int b_inc, float beta, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *c, unsigned int c_inc, unsigned int a_shift, unsigned int b_shift, unsigned int c_shift, bool use_gpu)</td></tr>
-<tr class="memitem:ga305a6893104d3c0d1c779d1003ba79ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga305a6893104d3c0d1c779d1003ba79ce">initEnvironment</a> (bool use_gpu)</td></tr>
-<tr class="memitem:ga3f100d41b315fe90edeaea6943d7e7db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga3f100d41b315fe90edeaea6943d7e7db">shutdownEnvironment</a> (bool use_gpu)</td></tr>
 <tr class="memitem:ga0975b65dfc0580001f919006f000711f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga0975b65dfc0580001f919006f000711f">doVectorSetToZero</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *v, unsigned int v_size, unsigned int inc, unsigned int shift, bool use_gpu)</td></tr>
 <tr class="memitem:ga9828fe5150bf6d19515369fc1cd6cf58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga9828fe5150bf6d19515369fc1cd6cf58">doVectorSet</a> (<a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *v, float value, unsigned int v_size, unsigned int inc, unsigned int shift, bool use_gpu)</td></tr>
 <tr class="memitem:ga1ab7f4f6e3f83020cff30b9cfc990876"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__math.html#ga1ab7f4f6e3f83020cff30b9cfc990876">doSscal</a> (unsigned int size, float alpha, <a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *x, unsigned int shift, unsigned int inc, bool use_gpu)</td></tr>
@@ -98,12 +101,102 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga80679f90f26951b40fe9abc30bcb8bb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define getMatrixFlatIndex</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lda, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((x)+(y)*(lda))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gac83f1a82f1330398953fe34317acb593"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define getMatrixIndex</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lda, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((x)*(lda)+(y))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="gaa82721cfddefc166d37d08b4b6929a07"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NEAR_ZERO&#160;&#160;&#160;1e-20f</td>
+          <td class="memname">#define NEAR_ZERO&#160;&#160;&#160;1e-5f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gae42154bb9087c065e409ddee2a5ac93d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sigmoid</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">numerator, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(numerator) / (exp(-(value))+1.0f)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -338,12 +431,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga92a7b230e647e7018884b336fcfe066f"></a>
+<a class="anchor" id="ga66d0316f1133e21a33be23a7df6aef65"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void doCalculateCrossEntropy </td>
+          <td class="memname">void doCalculateCrossEntropyErrorFunction </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td>
           <td class="paramname"><em>output</em>, </td>
@@ -408,12 +501,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga740df434af0a655eb31179eb1b86d7d2"></a>
+<a class="anchor" id="ga234b695c80edc2d2fdc55b90d05b8809"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void doCalculateFullCrossEntropy </td>
+          <td class="memname">void doCalculateFullCrossEntropyErrorFunction </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td>
           <td class="paramname"><em>output</em>, </td>
@@ -478,12 +571,82 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga257d73303e73c2f6281647ae8a219196"></a>
+<a class="anchor" id="ga17ee644f7c35db2e8e7f35d44935f27e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void doCalculateLocalFMeasure </td>
+          <td class="memname">void doCalculateFullLogisticCrossEntropyErrorFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td>
+          <td class="paramname"><em>target_output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td>
+          <td class="paramname"><em>output_error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td>
+          <td class="paramname"><em>pattern_errors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>EPSILON</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>INF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>output_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;&#160;</td>
+          <td class="paramname"><em>conf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_gpu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="classANN_1_1FullLogisticCrossEntropy.html#a8ba1820380fb12ba3718321f18cc9a79">ANN::FullLogisticCrossEntropy::computePatternErrorFunction()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga49e8c8dd5417e4d1cca7751726a3f16b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doCalculateLocalFMeasureErrorFunction </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
@@ -542,12 +705,82 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaac3aab201b7b4707e25c3ec1c7a3d02a"></a>
+<a class="anchor" id="gabe0cfe4557b4cbcda43828ccb2342d80"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void doCalculateMSE </td>
+          <td class="memname">void doCalculateLogisticCrossEntropyErrorFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td>
+          <td class="paramname"><em>target_output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td>
+          <td class="paramname"><em>output_error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td>
+          <td class="paramname"><em>pattern_errors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>EPSILON</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>INF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>output_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;&#160;</td>
+          <td class="paramname"><em>conf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_gpu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="classANN_1_1LogisticCrossEntropy.html#a9e6a16f5dfbc99a7b7f67484d7b2e1d8">ANN::LogisticCrossEntropy::computePatternErrorFunction()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga75458168db9788b503e65f617dd5167c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doCalculateMSEErrorFunction </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td>
           <td class="paramname"><em>output</em>, </td>
@@ -606,12 +839,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaa03e710479ad61df1336788f85d60fbe"></a>
+<a class="anchor" id="gadf0110c427020eb6dc2697e17707cd5d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void doCalculateTanh </td>
+          <td class="memname">void doCalculateTanhErrorFunction </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td>
           <td class="paramname"><em>output</em>, </td>
@@ -706,7 +939,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1LogisticActivationFunction.html#aacda8718305f1f29de4c9f7c86042b21">ANN::LogisticActivationFunction::multiplyDerivatives()</a>, and <a class="el" href="classANN_1_1SoftmaxActivationFunction.html#a696983bfee8a724666225233dc494c06">ANN::SoftmaxActivationFunction::multiplyDerivatives()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1LogisticActivationFunction.html#aa725cf6909b6ae0ebdda8a7fe7ac3d08">ANN::LogisticActivationFunction::multiplyDerivatives()</a>, and <a class="el" href="classANN_1_1SoftmaxActivationFunction.html#a97e7b59c72d8492ca5c6d533065f42ca">ANN::SoftmaxActivationFunction::multiplyDerivatives()</a>.</p>
 
 </div>
 </div>
@@ -752,7 +985,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1TanhActivationFunction.html#a6b4a3b619b608d08bfc52b367709e57c">ANN::TanhActivationFunction::multiplyDerivatives()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1TanhActivationFunction.html#a4decbe6802959eafb43847355154de30">ANN::TanhActivationFunction::multiplyDerivatives()</a>.</p>
 
 </div>
 </div>
@@ -1505,38 +1738,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Referenced by <a class="el" href="classANN_1_1RealActivationUnits.html#a30a528ad66272becfafcef387e308a42">ANN::RealActivationUnits::reset()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a15bf7ca911918cb7bcf443242c21e7e0">ANN::ANNBase::resetPatternErrorsAuxiliarVector()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga305a6893104d3c0d1c779d1003ba79ce"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void initEnvironment </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>use_gpu</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ga3f100d41b315fe90edeaea6943d7e7db"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void shutdownEnvironment </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>use_gpu</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

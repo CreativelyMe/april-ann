@@ -61,6 +61,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a81a7a99edbac74d3bb52f1c016caf6a9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ActivationsAction.html#a81a7a99edbac74d3bb52f1c016caf6a9">doForward</a> ()</td></tr>
 <tr class="memitem:a3c3dd8255b6933b6ff0ce1133a76f578"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ActivationsAction.html#a3c3dd8255b6933b6ff0ce1133a76f578">doBackward</a> ()</td></tr>
 <tr class="memitem:a0577da280988b91a32882e1c4341119f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classANN_1_1Action.html">Action</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ActivationsAction.html#a0577da280988b91a32882e1c4341119f">clone</a> (<a class="el" href="classapril__utils_1_1hash.html">hash</a>&lt; void *, void * &gt; &amp;clone_dict, const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;<a class="el" href="classANN_1_1Action.html#a6ebba29fff71094613918fd61f15bbac">conf</a>)</td></tr>
+<tr class="memitem:a6006ab9467c9ce96a4312c59d8efa0b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ActivationsAction.html#a6006ab9467c9ce96a4312c59d8efa0b1">transferFanInToConnections</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classANN_1_1Action"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classANN_1_1Action')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classANN_1_1Action.html">ANN::Action</a></td></tr>
 <tr class="memitem:ae81df765b78b3b2a60ebe2314f27d69f inherit pub_methods_classANN_1_1Action"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Action.html#ae81df765b78b3b2a60ebe2314f27d69f">Action</a> (const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;<a class="el" href="classANN_1_1Action.html#a6ebba29fff71094613918fd61f15bbac">conf</a>)</td></tr>
 <tr class="memitem:a688b4f3880be9e0f0fe1eccd745006a9 inherit pub_methods_classANN_1_1Action"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Action.html#a688b4f3880be9e0f0fe1eccd745006a9">~Action</a> ()</td></tr>
@@ -207,7 +208,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classANN_1_1Action.html#a3f510059a3944b1fad285dca5e856cbb">ANN::Action</a>.</p>
 
-<p>References <a class="el" href="classANN_1_1ActivationsAction.html#a1b2d768f877b1607f93f966e4af5a73f">act_func</a>, <a class="el" href="classANN_1_1Action.html#a6ebba29fff71094613918fd61f15bbac">ANN::Action::conf</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a664002a9fe5c892d98a864ff5b2549ea">ANN::ActivationUnits::getErrorVectorPtr()</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a74876abc836d8175095b8f1d8cc50a03">ANN::ActivationUnits::getPtr()</a>, <a class="el" href="classANN_1_1ActivationFunction.html#a4fb09b640d7f797f6948fe6e4beda4fb">ANN::ActivationFunction::multiplyDerivatives()</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a87b6cb36157fa4db8af6ae7f96514e44">ANN::ActivationUnits::size()</a>, <a class="el" href="classANN_1_1ActivationsAction.html#a443ce66cdce176ccac674d9264d6c8bd">units</a>, and <a class="el" href="structANNConfiguration.html#ab10488b09cddab0769d6f5e6f0c4ecd5">ANNConfiguration::use_cuda_flag</a>.</p>
+<p>References <a class="el" href="classANN_1_1ActivationsAction.html#a1b2d768f877b1607f93f966e4af5a73f">act_func</a>, <a class="el" href="classANN_1_1Action.html#a6ebba29fff71094613918fd61f15bbac">ANN::Action::conf</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a664002a9fe5c892d98a864ff5b2549ea">ANN::ActivationUnits::getErrorVectorPtr()</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a74876abc836d8175095b8f1d8cc50a03">ANN::ActivationUnits::getPtr()</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a7c0684ef745891a40f21ea4018b1f7e5">ANN::ActivationUnits::getType()</a>, <a class="el" href="classANN_1_1ActivationFunction.html#aea98ce2dca09b0d1aaf1fb3897ad306a">ANN::ActivationFunction::multiplyDerivatives()</a>, <a class="el" href="namespaceANN.html#a27380fa05ccdef05cbe2f5bbf0b6dfd1a682ef8f6928b6e3ec7c06a6f2b981422">ANN::OUTPUTS_TYPE</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a87b6cb36157fa4db8af6ae7f96514e44">ANN::ActivationUnits::size()</a>, <a class="el" href="classANN_1_1ActivationsAction.html#a443ce66cdce176ccac674d9264d6c8bd">units</a>, and <a class="el" href="structANNConfiguration.html#ab10488b09cddab0769d6f5e6f0c4ecd5">ANNConfiguration::use_cuda_flag</a>.</p>
 
 </div>
 </div>
@@ -235,6 +236,31 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="classANN_1_1Action.html#a1bd44dfea60aa1471c5a5507fa19103c">ANN::Action</a>.</p>
 
 <p>References <a class="el" href="classANN_1_1ActivationsAction.html#a1b2d768f877b1607f93f966e4af5a73f">act_func</a>, <a class="el" href="classANN_1_1ActivationFunction.html#a158f2c883f8597d22e67019e9c091ac9">ANN::ActivationFunction::applyActivation()</a>, <a class="el" href="classANN_1_1Action.html#a6ebba29fff71094613918fd61f15bbac">ANN::Action::conf</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a74876abc836d8175095b8f1d8cc50a03">ANN::ActivationUnits::getPtr()</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a87b6cb36157fa4db8af6ae7f96514e44">ANN::ActivationUnits::size()</a>, <a class="el" href="classANN_1_1ActivationsAction.html#a443ce66cdce176ccac674d9264d6c8bd">units</a>, and <a class="el" href="structANNConfiguration.html#ab10488b09cddab0769d6f5e6f0c4ecd5">ANNConfiguration::use_cuda_flag</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6006ab9467c9ce96a4312c59d8efa0b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ANN::ActivationsAction::transferFanInToConnections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classANN_1_1Action.html#a18da86446bdd083a335fdfb484328525">ANN::Action</a>.</p>
 
 </div>
 </div>

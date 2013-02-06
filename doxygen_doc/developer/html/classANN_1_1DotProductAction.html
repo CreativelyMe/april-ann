@@ -65,6 +65,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad406d1c232a38c5107e402ddacf3cb47"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1DotProductAction.html#ad406d1c232a38c5107e402ddacf3cb47">setOption</a> (const char *name, double value)</td></tr>
 <tr class="memitem:a74e40b6b91f2ab7e5a1303c3e59666fe"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1DotProductAction.html#a74e40b6b91f2ab7e5a1303c3e59666fe">hasOption</a> (const char *name)</td></tr>
 <tr class="memitem:a1b3f873471d76c01850a19b720b2e15c"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1DotProductAction.html#a1b3f873471d76c01850a19b720b2e15c">getOption</a> (const char *name)</td></tr>
+<tr class="memitem:a0e61f4e29bb154877323c8fcb2952345"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1DotProductAction.html#a0e61f4e29bb154877323c8fcb2952345">transferFanInToConnections</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classANN_1_1Action"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classANN_1_1Action')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classANN_1_1Action.html">ANN::Action</a></td></tr>
 <tr class="memitem:ae81df765b78b3b2a60ebe2314f27d69f inherit pub_methods_classANN_1_1Action"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Action.html#ae81df765b78b3b2a60ebe2314f27d69f">Action</a> (const <a class="el" href="structANNConfiguration.html">ANNConfiguration</a> &amp;<a class="el" href="classANN_1_1Action.html#a6ebba29fff71094613918fd61f15bbac">conf</a>)</td></tr>
 <tr class="memitem:a688b4f3880be9e0f0fe1eccd745006a9 inherit pub_methods_classANN_1_1Action"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Action.html#a688b4f3880be9e0f0fe1eccd745006a9">~Action</a> ()</td></tr>
@@ -141,7 +142,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classANN_1_1Connections.html#ac4ca23b3284a019c84e90242a5fcb782">ANN::Connections::checkInputOutputSizes()</a>, <a class="el" href="classANN_1_1Connections.html#aaa5555ec34ff46523b469cfeb470cf7f">ANN::Connections::countReference()</a>, <a class="el" href="group__util.html#ga7c141183788078513c128e5f0bb15f48">ERROR_EXIT</a>, and <a class="el" href="group__util.html#gaee8c908dd2bea7674e4c19493005ce68">IncRef</a>.</p>
+<p>References <a class="el" href="classANN_1_1Connections.html#ac4ca23b3284a019c84e90242a5fcb782">ANN::Connections::checkInputOutputSizes()</a>, <a class="el" href="classANN_1_1Connections.html#aaa5555ec34ff46523b469cfeb470cf7f">ANN::Connections::countReference()</a>, <a class="el" href="group__util.html#ga7c141183788078513c128e5f0bb15f48">ERROR_EXIT</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a940de518e3b1c7eb51a6312d366fe886">ANN::ActivationUnits::increaseFanIn()</a>, <a class="el" href="group__util.html#gaee8c908dd2bea7674e4c19493005ce68">IncRef</a>, and <a class="el" href="classANN_1_1ActivationUnits.html#a774d3c1107ecb22e0488b1cda487de4a">ANN::ActivationUnits::numNeurons()</a>.</p>
 
 <p>Referenced by <a class="el" href="classANN_1_1DotProductAction.html#af3f3777474b20cc1574792a67307db03">clone()</a>.</p>
 
@@ -477,6 +478,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0e61f4e29bb154877323c8fcb2952345"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ANN::DotProductAction::transferFanInToConnections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classANN_1_1Action.html#a18da86446bdd083a335fdfb484328525">ANN::Action</a>.</p>
+
+<p>References <a class="el" href="classANN_1_1ActivationUnits.html#a5560f61e016d264cd1c9385f254b6ac1">ANN::ActivationUnits::getFanIn()</a>, <a class="el" href="classANN_1_1DotProductAction.html#a76410b8903bace9ce60400cd339d330c">inputs</a>, <a class="el" href="classANN_1_1DotProductAction.html#ae286484f984e9e1a09401048d6115665">outputs</a>, <a class="el" href="classANN_1_1Connections.html#a42ff0697dd3cedf0a905619b074a6c3e">ANN::Connections::setFanIn()</a>, <a class="el" href="classANN_1_1DotProductAction.html#a4a2a5d654bdd879d89781509c795377a">transpose_weights</a>, and <a class="el" href="classANN_1_1DotProductAction.html#a02f213000bd8e8e8ca7ed4ff3242bdd1">weights_matrix</a>.</p>
+
+</div>
+</div>
 <h2>Member Data Documentation</h2>
 <a class="anchor" id="a8522a9ba8a9d9b0a6348d128465bd4b6"></a>
 <div class="memitem">
@@ -540,7 +568,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1DotProductAction.html#af3f3777474b20cc1574792a67307db03">clone()</a>, <a class="el" href="classANN_1_1DotProductAction.html#afaeb6cde4a18d7bdf3a63165113eae9d">doBackward()</a>, <a class="el" href="classANN_1_1DotProductAction.html#ab5a165fa8e941658a9f81c6c2ee7f7fb">doForward()</a>, and <a class="el" href="classANN_1_1DotProductAction.html#a39ba9612dba2def954331bcd6d635cc1">~DotProductAction()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1DotProductAction.html#af3f3777474b20cc1574792a67307db03">clone()</a>, <a class="el" href="classANN_1_1DotProductAction.html#afaeb6cde4a18d7bdf3a63165113eae9d">doBackward()</a>, <a class="el" href="classANN_1_1DotProductAction.html#ab5a165fa8e941658a9f81c6c2ee7f7fb">doForward()</a>, <a class="el" href="classANN_1_1DotProductAction.html#a0e61f4e29bb154877323c8fcb2952345">transferFanInToConnections()</a>, and <a class="el" href="classANN_1_1DotProductAction.html#a39ba9612dba2def954331bcd6d635cc1">~DotProductAction()</a>.</p>
 
 </div>
 </div>
@@ -650,7 +678,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1DotProductAction.html#af3f3777474b20cc1574792a67307db03">clone()</a>, <a class="el" href="classANN_1_1DotProductAction.html#afaeb6cde4a18d7bdf3a63165113eae9d">doBackward()</a>, <a class="el" href="classANN_1_1DotProductAction.html#ab5a165fa8e941658a9f81c6c2ee7f7fb">doForward()</a>, and <a class="el" href="classANN_1_1DotProductAction.html#a39ba9612dba2def954331bcd6d635cc1">~DotProductAction()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1DotProductAction.html#af3f3777474b20cc1574792a67307db03">clone()</a>, <a class="el" href="classANN_1_1DotProductAction.html#afaeb6cde4a18d7bdf3a63165113eae9d">doBackward()</a>, <a class="el" href="classANN_1_1DotProductAction.html#ab5a165fa8e941658a9f81c6c2ee7f7fb">doForward()</a>, <a class="el" href="classANN_1_1DotProductAction.html#a0e61f4e29bb154877323c8fcb2952345">transferFanInToConnections()</a>, and <a class="el" href="classANN_1_1DotProductAction.html#a39ba9612dba2def954331bcd6d635cc1">~DotProductAction()</a>.</p>
 
 </div>
 </div>
@@ -672,7 +700,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1DotProductAction.html#ad221f3e350df5b1271af0b86a9573b01">backpropagateErrors()</a>, <a class="el" href="classANN_1_1DotProductAction.html#af3f3777474b20cc1574792a67307db03">clone()</a>, <a class="el" href="classANN_1_1DotProductAction.html#a941a8d6102292f6acd1955654a003104">computeBPUpdateOnPrevVectors()</a>, and <a class="el" href="classANN_1_1DotProductAction.html#ab5a165fa8e941658a9f81c6c2ee7f7fb">doForward()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1DotProductAction.html#ad221f3e350df5b1271af0b86a9573b01">backpropagateErrors()</a>, <a class="el" href="classANN_1_1DotProductAction.html#af3f3777474b20cc1574792a67307db03">clone()</a>, <a class="el" href="classANN_1_1DotProductAction.html#a941a8d6102292f6acd1955654a003104">computeBPUpdateOnPrevVectors()</a>, <a class="el" href="classANN_1_1DotProductAction.html#ab5a165fa8e941658a9f81c6c2ee7f7fb">doForward()</a>, and <a class="el" href="classANN_1_1DotProductAction.html#a0e61f4e29bb154877323c8fcb2952345">transferFanInToConnections()</a>.</p>
 
 </div>
 </div>
@@ -716,7 +744,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1DotProductAction.html#af3f3777474b20cc1574792a67307db03">clone()</a>, <a class="el" href="classANN_1_1DotProductAction.html#a941a8d6102292f6acd1955654a003104">computeBPUpdateOnPrevVectors()</a>, <a class="el" href="classANN_1_1DotProductAction.html#afaeb6cde4a18d7bdf3a63165113eae9d">doBackward()</a>, <a class="el" href="classANN_1_1DotProductAction.html#ab5a165fa8e941658a9f81c6c2ee7f7fb">doForward()</a>, and <a class="el" href="classANN_1_1DotProductAction.html#a39ba9612dba2def954331bcd6d635cc1">~DotProductAction()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1DotProductAction.html#af3f3777474b20cc1574792a67307db03">clone()</a>, <a class="el" href="classANN_1_1DotProductAction.html#a941a8d6102292f6acd1955654a003104">computeBPUpdateOnPrevVectors()</a>, <a class="el" href="classANN_1_1DotProductAction.html#afaeb6cde4a18d7bdf3a63165113eae9d">doBackward()</a>, <a class="el" href="classANN_1_1DotProductAction.html#ab5a165fa8e941658a9f81c6c2ee7f7fb">doForward()</a>, <a class="el" href="classANN_1_1DotProductAction.html#a0e61f4e29bb154877323c8fcb2952345">transferFanInToConnections()</a>, and <a class="el" href="classANN_1_1DotProductAction.html#a39ba9612dba2def954331bcd6d635cc1">~DotProductAction()</a>.</p>
 
 </div>
 </div>

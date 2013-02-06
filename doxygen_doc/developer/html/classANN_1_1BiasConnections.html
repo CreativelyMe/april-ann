@@ -58,8 +58,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a173b990f2b9d92b0db642977574d8c84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1BiasConnections.html#a173b990f2b9d92b0db642977574d8c84">BiasConnections</a> (unsigned int bias_size)</td></tr>
 <tr class="memitem:a23d8a3ea6ef605b639cf53ea8bf8c557"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1BiasConnections.html#a23d8a3ea6ef605b639cf53ea8bf8c557">~BiasConnections</a> ()</td></tr>
 <tr class="memitem:a14ef4b50741c668e94091d461d0559e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1BiasConnections.html#a14ef4b50741c668e94091d461d0559e2">checkInputOutputSizes</a> (<a class="el" href="classANN_1_1ActivationUnits.html">ActivationUnits</a> *input, <a class="el" href="classANN_1_1ActivationUnits.html">ActivationUnits</a> *output) const </td></tr>
-<tr class="memitem:a7185b101f182342981ce57563c872bd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1BiasConnections.html#a7185b101f182342981ce57563c872bd7">randomizeWeights</a> (<a class="el" href="classMTRand.html">MTRand</a> *rnd, float low, float high)</td></tr>
-<tr class="memitem:a4f5bb2756ff1c33e43e337c78ad49dc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1BiasConnections.html#a4f5bb2756ff1c33e43e337c78ad49dc6">randomizeWeightsAtColumn</a> (unsigned int col, <a class="el" href="classMTRand.html">MTRand</a> *rnd, float low, float high)</td></tr>
+<tr class="memitem:ae08684b09cf56a38fac256060cc12bf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1BiasConnections.html#ae08684b09cf56a38fac256060cc12bf9">randomizeWeights</a> (<a class="el" href="classMTRand.html">MTRand</a> *rnd, float low, float high, bool use_fanin)</td></tr>
+<tr class="memitem:a1705fdbfbab1bd1ed4a371f0051a0d66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1BiasConnections.html#a1705fdbfbab1bd1ed4a371f0051a0d66">randomizeWeightsAtColumn</a> (unsigned int col, <a class="el" href="classMTRand.html">MTRand</a> *rnd, float low, float high, bool use_fanin)</td></tr>
 <tr class="memitem:a223de7870d8e5c094d6938c4c129161c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1BiasConnections.html#a223de7870d8e5c094d6938c4c129161c">loadWeights</a> (<a class="el" href="group__matrix.html#ga635261f1d8d7943ab3cfd5b3f24abd26">MatrixFloat</a> *data, <a class="el" href="group__matrix.html#ga635261f1d8d7943ab3cfd5b3f24abd26">MatrixFloat</a> *old_data, unsigned int first_weight_pos, unsigned int column_size)</td></tr>
 <tr class="memitem:a7068277e8bc61cb5c33c6a9af1b35b57"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1BiasConnections.html#a7068277e8bc61cb5c33c6a9af1b35b57">copyWeightsTo</a> (<a class="el" href="group__matrix.html#ga635261f1d8d7943ab3cfd5b3f24abd26">MatrixFloat</a> *data, <a class="el" href="group__matrix.html#ga635261f1d8d7943ab3cfd5b3f24abd26">MatrixFloat</a> *old_data, unsigned int first_weight_pos, unsigned int column_size)</td></tr>
 <tr class="memitem:aa8f6fe6c996b9e2447302d0cc86cf329"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classANN_1_1Connections.html">Connections</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1BiasConnections.html#aa8f6fe6c996b9e2447302d0cc86cf329">clone</a> ()</td></tr>
@@ -81,6 +81,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ff7bc87aa363f428d60b7fd9c3b96c9 inherit pub_methods_classANN_1_1Connections"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#a7ff7bc87aa363f428d60b7fd9c3b96c9">getNumWeights</a> () const </td></tr>
 <tr class="memitem:a142abaa4b19aa71e9bd39b8d71ed2ab6 inherit pub_methods_classANN_1_1Connections"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#a142abaa4b19aa71e9bd39b8d71ed2ab6">getNumInputs</a> () const </td></tr>
 <tr class="memitem:ab1c1412577eb7e38cb04da023a0b4c1d inherit pub_methods_classANN_1_1Connections"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#ab1c1412577eb7e38cb04da023a0b4c1d">getNumOutputs</a> () const </td></tr>
+<tr class="memitem:a42ff0697dd3cedf0a905619b074a6c3e inherit pub_methods_classANN_1_1Connections"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#a42ff0697dd3cedf0a905619b074a6c3e">setFanIn</a> (unsigned int value)</td></tr>
 <tr class="inherit_header pub_methods_classReferenced"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classReferenced')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classReferenced.html">Referenced</a></td></tr>
 <tr class="memitem:ga8654116c264068ee611850bbee8209d4 inherit pub_methods_classReferenced"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util.html#ga8654116c264068ee611850bbee8209d4">Referenced</a> ()</td></tr>
 <tr class="memitem:ga9901ca9b26619914ffeb3c93e2f3b7c3 inherit pub_methods_classReferenced"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util.html#ga9901ca9b26619914ffeb3c93e2f3b7c3">~Referenced</a> ()</td></tr>
@@ -90,7 +91,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_attribs_classANN_1_1Connections"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classANN_1_1Connections')"><img src="closed.png" alt="-"/>&nbsp;Static Public Attributes inherited from <a class="el" href="classANN_1_1Connections.html">ANN::Connections</a></td></tr>
-<tr class="memitem:aa7147df8e44ab468bf7ac48e123a20d5 inherit pub_static_attribs_classANN_1_1Connections"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#aa7147df8e44ab468bf7ac48e123a20d5">weightnearzero</a> = 1e-10</td></tr>
+<tr class="memitem:aa7147df8e44ab468bf7ac48e123a20d5 inherit pub_static_attribs_classANN_1_1Connections"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#aa7147df8e44ab468bf7ac48e123a20d5">weightnearzero</a> = 1e-7</td></tr>
 <tr class="inherit_header pro_attribs_classANN_1_1Connections"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classANN_1_1Connections')"><img src="closed.png" alt="-"/>&nbsp;Protected Attributes inherited from <a class="el" href="classANN_1_1Connections.html">ANN::Connections</a></td></tr>
 <tr class="memitem:a3d96e173a7bc299dce22eb49339a854c inherit pro_attribs_classANN_1_1Connections"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#a3d96e173a7bc299dce22eb49339a854c">weights</a></td></tr>
 <tr class="memitem:ac3a2ae1eb73105b4909728f2f5982616 inherit pro_attribs_classANN_1_1Connections"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#ac3a2ae1eb73105b4909728f2f5982616">prev_weights</a></td></tr>
@@ -100,6 +101,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ae0a3272752ad58928adf7f09b9cb6e02 inherit pro_attribs_classANN_1_1Connections"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#ae0a3272752ad58928adf7f09b9cb6e02">num_outputs</a></td></tr>
 <tr class="memitem:a0557b8cebaa288c9c9b645fd687873ab inherit pro_attribs_classANN_1_1Connections"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#a0557b8cebaa288c9c9b645fd687873ab">num_references</a></td></tr>
 <tr class="memitem:ac4e238d518405fe828bd623f91c92aa6 inherit pro_attribs_classANN_1_1Connections"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#ac4e238d518405fe828bd623f91c92aa6">update_weights_calls</a></td></tr>
+<tr class="memitem:aef12b0f81b4e10c1d4957f2e30d5f713 inherit pro_attribs_classANN_1_1Connections"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#aef12b0f81b4e10c1d4957f2e30d5f713">fanin</a></td></tr>
 </table>
 <h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a173b990f2b9d92b0db642977574d8c84"></a>
@@ -255,7 +257,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classANN_1_1Connections.html#aaa3818cc6fb7310ed80c311c1fd457b9">ANN::Connections</a>.</p>
 
-<p>References <a class="el" href="classMatrix.html#aa25e877277174b699a6f7f953dbd7b38">Matrix&lt; T &gt;::data</a>, <a class="el" href="classGPUMirroredMemoryBlock.html#a597465ad18e697d0c350be3fab3c4d8a">GPUMirroredMemoryBlock&lt; T &gt;::getPPALForRead()</a>, <a class="el" href="classANN_1_1Connections.html#ac3a2ae1eb73105b4909728f2f5982616">ANN::Connections::prev_weights</a>, <a class="el" href="classANN_1_1Connections.html#a2e62a9a748ae28fe7e330f363514cb95">ANN::Connections::total_size</a>, and <a class="el" href="classANN_1_1Connections.html#a3d96e173a7bc299dce22eb49339a854c">ANN::Connections::weights</a>.</p>
+<p>References <a class="el" href="classMatrix.html#aa25e877277174b699a6f7f953dbd7b38">Matrix&lt; T &gt;::data</a>, <a class="el" href="group__util.html#ga9d428e23770aa851b611478d4e4a4db4">ERROR_EXIT2</a>, <a class="el" href="classGPUMirroredMemoryBlock.html#a597465ad18e697d0c350be3fab3c4d8a">GPUMirroredMemoryBlock&lt; T &gt;::getPPALForRead()</a>, <a class="el" href="namespaceapril__utils.html#a7b8f5afdde6fe162d1fb85912b71435c">april_utils::max()</a>, <a class="el" href="classANN_1_1Connections.html#ad4df768ecf3dce384bfcece85f498513">ANN::Connections::num_inputs</a>, <a class="el" href="classANN_1_1Connections.html#ac3a2ae1eb73105b4909728f2f5982616">ANN::Connections::prev_weights</a>, <a class="el" href="classMatrix.html#a86c3d30dba56b848d644b2a581981c6f">Matrix&lt; T &gt;::size</a>, <a class="el" href="classANN_1_1Connections.html#a2e62a9a748ae28fe7e330f363514cb95">ANN::Connections::total_size</a>, and <a class="el" href="classANN_1_1Connections.html#a3d96e173a7bc299dce22eb49339a854c">ANN::Connections::weights</a>.</p>
 
 </div>
 </div>
@@ -305,11 +307,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classANN_1_1Connections.html#a69838bfcc7c12a0a1b1d2ea567b0535a">ANN::Connections</a>.</p>
 
-<p>References <a class="el" href="classMatrix.html#aa25e877277174b699a6f7f953dbd7b38">Matrix&lt; T &gt;::data</a>, <a class="el" href="classGPUMirroredMemoryBlock.html#a083c2743a01e38a5fe5036be599c0627">GPUMirroredMemoryBlock&lt; T &gt;::getPPALForReadAndWrite()</a>, <a class="el" href="classANN_1_1Connections.html#ac3a2ae1eb73105b4909728f2f5982616">ANN::Connections::prev_weights</a>, <a class="el" href="classANN_1_1Connections.html#a2e62a9a748ae28fe7e330f363514cb95">ANN::Connections::total_size</a>, and <a class="el" href="classANN_1_1Connections.html#a3d96e173a7bc299dce22eb49339a854c">ANN::Connections::weights</a>.</p>
+<p>References <a class="el" href="classMatrix.html#aa25e877277174b699a6f7f953dbd7b38">Matrix&lt; T &gt;::data</a>, <a class="el" href="group__util.html#ga9d428e23770aa851b611478d4e4a4db4">ERROR_EXIT2</a>, <a class="el" href="classGPUMirroredMemoryBlock.html#a083c2743a01e38a5fe5036be599c0627">GPUMirroredMemoryBlock&lt; T &gt;::getPPALForReadAndWrite()</a>, <a class="el" href="namespaceapril__utils.html#a7b8f5afdde6fe162d1fb85912b71435c">april_utils::max()</a>, <a class="el" href="classANN_1_1Connections.html#ad4df768ecf3dce384bfcece85f498513">ANN::Connections::num_inputs</a>, <a class="el" href="classANN_1_1Connections.html#ac3a2ae1eb73105b4909728f2f5982616">ANN::Connections::prev_weights</a>, <a class="el" href="classMatrix.html#a86c3d30dba56b848d644b2a581981c6f">Matrix&lt; T &gt;::size</a>, <a class="el" href="classANN_1_1Connections.html#a2e62a9a748ae28fe7e330f363514cb95">ANN::Connections::total_size</a>, and <a class="el" href="classANN_1_1Connections.html#a3d96e173a7bc299dce22eb49339a854c">ANN::Connections::weights</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7185b101f182342981ce57563c872bd7"></a>
+<a class="anchor" id="ae08684b09cf56a38fac256060cc12bf9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -332,7 +334,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>high</em>&#160;</td>
+          <td class="paramname"><em>high</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_fanin</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -347,13 +355,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classANN_1_1Connections.html#a54d14f97893acad2688921d30127cd6c">ANN::Connections</a>.</p>
+<p>Implements <a class="el" href="classANN_1_1Connections.html#a3aa19217f2362e73fb253a6806f0915f">ANN::Connections</a>.</p>
 
-<p>References <a class="el" href="classGPUMirroredMemoryBlock.html#a083c2743a01e38a5fe5036be599c0627">GPUMirroredMemoryBlock&lt; T &gt;::getPPALForReadAndWrite()</a>, <a class="el" href="classANN_1_1Connections.html#ac3a2ae1eb73105b4909728f2f5982616">ANN::Connections::prev_weights</a>, <a class="el" href="all__all__connection_8cc.html#af5974f44e67a52f080084a6111537b70">rnd_weight</a>, <a class="el" href="classANN_1_1Connections.html#a2e62a9a748ae28fe7e330f363514cb95">ANN::Connections::total_size</a>, and <a class="el" href="classANN_1_1Connections.html#a3d96e173a7bc299dce22eb49339a854c">ANN::Connections::weights</a>.</p>
+<p>References <a class="el" href="classANN_1_1Connections.html#aef12b0f81b4e10c1d4957f2e30d5f713">ANN::Connections::fanin</a>, <a class="el" href="classGPUMirroredMemoryBlock.html#a083c2743a01e38a5fe5036be599c0627">GPUMirroredMemoryBlock&lt; T &gt;::getPPALForReadAndWrite()</a>, <a class="el" href="classANN_1_1Connections.html#ac3a2ae1eb73105b4909728f2f5982616">ANN::Connections::prev_weights</a>, <a class="el" href="group__ann__base.html#gab4c08867702fcf6956928c7e189a7ee6">rnd_weight</a>, <a class="el" href="classANN_1_1Connections.html#a2e62a9a748ae28fe7e330f363514cb95">ANN::Connections::total_size</a>, <a class="el" href="classANN_1_1Connections.html#aa7147df8e44ab468bf7ac48e123a20d5">ANN::Connections::weightnearzero</a>, and <a class="el" href="classANN_1_1Connections.html#a3d96e173a7bc299dce22eb49339a854c">ANN::Connections::weights</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4f5bb2756ff1c33e43e337c78ad49dc6"></a>
+<a class="anchor" id="a1705fdbfbab1bd1ed4a371f0051a0d66"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -382,7 +390,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>high</em>&#160;</td>
+          <td class="paramname"><em>high</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_fanin</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -397,9 +411,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classANN_1_1Connections.html#aa80a0d9747fab6ca827120c5a1dbc25f">ANN::Connections</a>.</p>
+<p>Implements <a class="el" href="classANN_1_1Connections.html#ab962a3e6e4d9af7ed2ca0fe3aed287cd">ANN::Connections</a>.</p>
 
-<p>References <a class="el" href="classGPUMirroredMemoryBlock.html#a083c2743a01e38a5fe5036be599c0627">GPUMirroredMemoryBlock&lt; T &gt;::getPPALForReadAndWrite()</a>, <a class="el" href="classANN_1_1Connections.html#ac3a2ae1eb73105b4909728f2f5982616">ANN::Connections::prev_weights</a>, <a class="el" href="all__all__connection_8cc.html#af5974f44e67a52f080084a6111537b70">rnd_weight</a>, and <a class="el" href="classANN_1_1Connections.html#a3d96e173a7bc299dce22eb49339a854c">ANN::Connections::weights</a>.</p>
+<p>References <a class="el" href="classANN_1_1Connections.html#aef12b0f81b4e10c1d4957f2e30d5f713">ANN::Connections::fanin</a>, <a class="el" href="classGPUMirroredMemoryBlock.html#a083c2743a01e38a5fe5036be599c0627">GPUMirroredMemoryBlock&lt; T &gt;::getPPALForReadAndWrite()</a>, <a class="el" href="classANN_1_1Connections.html#ac3a2ae1eb73105b4909728f2f5982616">ANN::Connections::prev_weights</a>, <a class="el" href="group__ann__base.html#gab4c08867702fcf6956928c7e189a7ee6">rnd_weight</a>, <a class="el" href="classANN_1_1Connections.html#aa7147df8e44ab468bf7ac48e123a20d5">ANN::Connections::weightnearzero</a>, and <a class="el" href="classANN_1_1Connections.html#a3d96e173a7bc299dce22eb49339a854c">ANN::Connections::weights</a>.</p>
 
 </div>
 </div>

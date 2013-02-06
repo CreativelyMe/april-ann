@@ -72,14 +72,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab847b97c79c6b9bc860b0e879c7b9685"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#ab847b97c79c6b9bc860b0e879c7b9685">getPtr</a> ()</td></tr>
 <tr class="memitem:ae5be174bf07df8e768d9b4bd1fee0f63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__math.html#ga69731d455c34809dc174535f8a5d55c0">FloatGPUMirroredMemoryBlock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#ae5be174bf07df8e768d9b4bd1fee0f63">getPrevPtr</a> ()</td></tr>
 <tr class="memitem:ac4ca23b3284a019c84e90242a5fcb782"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#ac4ca23b3284a019c84e90242a5fcb782">checkInputOutputSizes</a> (<a class="el" href="classANN_1_1ActivationUnits.html">ActivationUnits</a> *input, <a class="el" href="classANN_1_1ActivationUnits.html">ActivationUnits</a> *output) const =0</td></tr>
-<tr class="memitem:a54d14f97893acad2688921d30127cd6c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#a54d14f97893acad2688921d30127cd6c">randomizeWeights</a> (<a class="el" href="classMTRand.html">MTRand</a> *rnd, float low, float high)=0</td></tr>
-<tr class="memitem:aa80a0d9747fab6ca827120c5a1dbc25f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#aa80a0d9747fab6ca827120c5a1dbc25f">randomizeWeightsAtColumn</a> (unsigned int col, <a class="el" href="classMTRand.html">MTRand</a> *rnd, float low, float high)=0</td></tr>
+<tr class="memitem:a3aa19217f2362e73fb253a6806f0915f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#a3aa19217f2362e73fb253a6806f0915f">randomizeWeights</a> (<a class="el" href="classMTRand.html">MTRand</a> *rnd, float low, float high, bool use_fanin)=0</td></tr>
+<tr class="memitem:ab962a3e6e4d9af7ed2ca0fe3aed287cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#ab962a3e6e4d9af7ed2ca0fe3aed287cd">randomizeWeightsAtColumn</a> (unsigned int col, <a class="el" href="classMTRand.html">MTRand</a> *rnd, float low, float high, bool use_fanin)=0</td></tr>
 <tr class="memitem:a69838bfcc7c12a0a1b1d2ea567b0535a"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#a69838bfcc7c12a0a1b1d2ea567b0535a">loadWeights</a> (<a class="el" href="group__matrix.html#ga635261f1d8d7943ab3cfd5b3f24abd26">MatrixFloat</a> *data, <a class="el" href="group__matrix.html#ga635261f1d8d7943ab3cfd5b3f24abd26">MatrixFloat</a> *old_data, unsigned int first_weight_pos, unsigned int column_size)=0</td></tr>
 <tr class="memitem:aaa3818cc6fb7310ed80c311c1fd457b9"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#aaa3818cc6fb7310ed80c311c1fd457b9">copyWeightsTo</a> (<a class="el" href="group__matrix.html#ga635261f1d8d7943ab3cfd5b3f24abd26">MatrixFloat</a> *data, <a class="el" href="group__matrix.html#ga635261f1d8d7943ab3cfd5b3f24abd26">MatrixFloat</a> *old_data, unsigned int first_weight_pos, unsigned int column_size)=0</td></tr>
 <tr class="memitem:ac72ec55b3284a6ef309c714f54508700"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classANN_1_1Connections.html">Connections</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#ac72ec55b3284a6ef309c714f54508700">clone</a> ()=0</td></tr>
 <tr class="memitem:a7ff7bc87aa363f428d60b7fd9c3b96c9"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#a7ff7bc87aa363f428d60b7fd9c3b96c9">getNumWeights</a> () const </td></tr>
 <tr class="memitem:a142abaa4b19aa71e9bd39b8d71ed2ab6"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#a142abaa4b19aa71e9bd39b8d71ed2ab6">getNumInputs</a> () const </td></tr>
 <tr class="memitem:ab1c1412577eb7e38cb04da023a0b4c1d"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#ab1c1412577eb7e38cb04da023a0b4c1d">getNumOutputs</a> () const </td></tr>
+<tr class="memitem:a42ff0697dd3cedf0a905619b074a6c3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#a42ff0697dd3cedf0a905619b074a6c3e">setFanIn</a> (unsigned int value)</td></tr>
 <tr class="inherit_header pub_methods_classReferenced"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classReferenced')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classReferenced.html">Referenced</a></td></tr>
 <tr class="memitem:ga8654116c264068ee611850bbee8209d4 inherit pub_methods_classReferenced"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util.html#ga8654116c264068ee611850bbee8209d4">Referenced</a> ()</td></tr>
 <tr class="memitem:ga9901ca9b26619914ffeb3c93e2f3b7c3 inherit pub_methods_classReferenced"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__util.html#ga9901ca9b26619914ffeb3c93e2f3b7c3">~Referenced</a> ()</td></tr>
@@ -88,7 +89,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:aa7147df8e44ab468bf7ac48e123a20d5"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#aa7147df8e44ab468bf7ac48e123a20d5">weightnearzero</a> = 1e-10</td></tr>
+<tr class="memitem:aa7147df8e44ab468bf7ac48e123a20d5"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#aa7147df8e44ab468bf7ac48e123a20d5">weightnearzero</a> = 1e-7</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -100,6 +101,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ae0a3272752ad58928adf7f09b9cb6e02"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#ae0a3272752ad58928adf7f09b9cb6e02">num_outputs</a></td></tr>
 <tr class="memitem:a0557b8cebaa288c9c9b645fd687873ab"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#a0557b8cebaa288c9c9b645fd687873ab">num_references</a></td></tr>
 <tr class="memitem:ac4e238d518405fe828bd623f91c92aa6"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#ac4e238d518405fe828bd623f91c92aa6">update_weights_calls</a></td></tr>
+<tr class="memitem:aef12b0f81b4e10c1d4957f2e30d5f713"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1Connections.html#aef12b0f81b4e10c1d4957f2e30d5f713">fanin</a></td></tr>
 <tr class="inherit_header pro_attribs_classReferenced"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classReferenced')"><img src="closed.png" alt="-"/>&nbsp;Protected Attributes inherited from <a class="el" href="classReferenced.html">Referenced</a></td></tr>
 <tr class="memitem:a85b79d29b1b561f765f366d18093585e inherit pro_attribs_classReferenced"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReferenced.html#a85b79d29b1b561f765f366d18093585e">refs</a></td></tr>
 </table>
@@ -628,7 +630,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a54d14f97893acad2688921d30127cd6c"></a>
+<a class="anchor" id="a3aa19217f2362e73fb253a6806f0915f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -651,7 +653,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>high</em>&#160;</td>
+          <td class="paramname"><em>high</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_fanin</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -666,11 +674,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classANN_1_1AllAllConnections.html#a04d79fa8456b0fc495465afe8a2562ee">ANN::AllAllConnections</a>, and <a class="el" href="classANN_1_1BiasConnections.html#a7185b101f182342981ce57563c872bd7">ANN::BiasConnections</a>.</p>
+<p>Implemented in <a class="el" href="classANN_1_1AllAllConnections.html#a52cf8409cfefea27032efa8a9cf44179">ANN::AllAllConnections</a>, and <a class="el" href="classANN_1_1BiasConnections.html#ae08684b09cf56a38fac256060cc12bf9">ANN::BiasConnections</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa80a0d9747fab6ca827120c5a1dbc25f"></a>
+<a class="anchor" id="ab962a3e6e4d9af7ed2ca0fe3aed287cd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -699,7 +707,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>high</em>&#160;</td>
+          <td class="paramname"><em>high</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>use_fanin</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -714,7 +728,35 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classANN_1_1AllAllConnections.html#ab2dbbbea79307ced0db01525ce664ff4">ANN::AllAllConnections</a>, and <a class="el" href="classANN_1_1BiasConnections.html#a4f5bb2756ff1c33e43e337c78ad49dc6">ANN::BiasConnections</a>.</p>
+<p>Implemented in <a class="el" href="classANN_1_1AllAllConnections.html#ac64ea45ebc13dc7eeb925a4f7cd956a8">ANN::AllAllConnections</a>, and <a class="el" href="classANN_1_1BiasConnections.html#a1705fdbfbab1bd1ed4a371f0051a0d66">ANN::BiasConnections</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42ff0697dd3cedf0a905619b074a6c3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ANN::Connections::setFanIn </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classANN_1_1Connections.html#aef12b0f81b4e10c1d4957f2e30d5f713">fanin</a>, and <a class="el" href="namespaceapril__utils.html#a7b8f5afdde6fe162d1fb85912b71435c">april_utils::max()</a>.</p>
+
+<p>Referenced by <a class="el" href="classANN_1_1ForwardBiasAction.html#a883799807a2f97bdf99448def63ae6fd">ANN::ForwardBiasAction::transferFanInToConnections()</a>, and <a class="el" href="classANN_1_1DotProductAction.html#a0e61f4e29bb154877323c8fcb2952345">ANN::DotProductAction::transferFanInToConnections()</a>.</p>
 
 </div>
 </div>
@@ -736,6 +778,28 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2>Member Data Documentation</h2>
+<a class="anchor" id="aef12b0f81b4e10c1d4957f2e30d5f713"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ANN::Connections::fanin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Referenced by <a class="el" href="classANN_1_1BiasConnections.html#ae08684b09cf56a38fac256060cc12bf9">ANN::BiasConnections::randomizeWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a52cf8409cfefea27032efa8a9cf44179">ANN::AllAllConnections::randomizeWeights()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a1705fdbfbab1bd1ed4a371f0051a0d66">ANN::BiasConnections::randomizeWeightsAtColumn()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#ac64ea45ebc13dc7eeb925a4f7cd956a8">ANN::AllAllConnections::randomizeWeightsAtColumn()</a>, and <a class="el" href="classANN_1_1Connections.html#a42ff0697dd3cedf0a905619b074a6c3e">setFanIn()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad4df768ecf3dce384bfcece85f498513"></a>
 <div class="memitem">
 <div class="memproto">
@@ -756,7 +820,7 @@ Protected Attributes</h2></td></tr>
 
 <p>numero de inputs y numero de outputs </p>
 
-<p>Referenced by <a class="el" href="classANN_1_1AllAllConnections.html#a2d4c9b7f571a2edefa02ad5f8ee54086">ANN::AllAllConnections::checkInputOutputSizes()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a73ab3b5ff26e2a64219cf195bfe0ff1b">ANN::AllAllConnections::clone()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a2b433bf0a733420eecc39b0170e1a682">ANN::AllAllConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1Connections.html#a142abaa4b19aa71e9bd39b8d71ed2ab6">getNumInputs()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a7d6eb20f2d705e6e718f69dc0b9d1791">ANN::AllAllConnections::loadWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a04d79fa8456b0fc495465afe8a2562ee">ANN::AllAllConnections::randomizeWeights()</a>, and <a class="el" href="classANN_1_1AllAllConnections.html#ab2dbbbea79307ced0db01525ce664ff4">ANN::AllAllConnections::randomizeWeightsAtColumn()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1AllAllConnections.html#a2d4c9b7f571a2edefa02ad5f8ee54086">ANN::AllAllConnections::checkInputOutputSizes()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a73ab3b5ff26e2a64219cf195bfe0ff1b">ANN::AllAllConnections::clone()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a7068277e8bc61cb5c33c6a9af1b35b57">ANN::BiasConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a2b433bf0a733420eecc39b0170e1a682">ANN::AllAllConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1Connections.html#a142abaa4b19aa71e9bd39b8d71ed2ab6">getNumInputs()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a223de7870d8e5c094d6938c4c129161c">ANN::BiasConnections::loadWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a7d6eb20f2d705e6e718f69dc0b9d1791">ANN::AllAllConnections::loadWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a52cf8409cfefea27032efa8a9cf44179">ANN::AllAllConnections::randomizeWeights()</a>, and <a class="el" href="classANN_1_1AllAllConnections.html#ac64ea45ebc13dc7eeb925a4f7cd956a8">ANN::AllAllConnections::randomizeWeightsAtColumn()</a>.</p>
 
 </div>
 </div>
@@ -778,7 +842,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1AllAllConnections.html#a2d4c9b7f571a2edefa02ad5f8ee54086">ANN::AllAllConnections::checkInputOutputSizes()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a73ab3b5ff26e2a64219cf195bfe0ff1b">ANN::AllAllConnections::clone()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a2b433bf0a733420eecc39b0170e1a682">ANN::AllAllConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1Connections.html#ab1c1412577eb7e38cb04da023a0b4c1d">getNumOutputs()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a7d6eb20f2d705e6e718f69dc0b9d1791">ANN::AllAllConnections::loadWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a04d79fa8456b0fc495465afe8a2562ee">ANN::AllAllConnections::randomizeWeights()</a>, and <a class="el" href="classANN_1_1AllAllConnections.html#ab2dbbbea79307ced0db01525ce664ff4">ANN::AllAllConnections::randomizeWeightsAtColumn()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1AllAllConnections.html#a2d4c9b7f571a2edefa02ad5f8ee54086">ANN::AllAllConnections::checkInputOutputSizes()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a73ab3b5ff26e2a64219cf195bfe0ff1b">ANN::AllAllConnections::clone()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a2b433bf0a733420eecc39b0170e1a682">ANN::AllAllConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1Connections.html#ab1c1412577eb7e38cb04da023a0b4c1d">getNumOutputs()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a7d6eb20f2d705e6e718f69dc0b9d1791">ANN::AllAllConnections::loadWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a52cf8409cfefea27032efa8a9cf44179">ANN::AllAllConnections::randomizeWeights()</a>, and <a class="el" href="classANN_1_1AllAllConnections.html#ac64ea45ebc13dc7eeb925a4f7cd956a8">ANN::AllAllConnections::randomizeWeightsAtColumn()</a>.</p>
 
 </div>
 </div>
@@ -822,7 +886,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1BiasConnections.html#aa8f6fe6c996b9e2447302d0cc86cf329">ANN::BiasConnections::clone()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a73ab3b5ff26e2a64219cf195bfe0ff1b">ANN::AllAllConnections::clone()</a>, <a class="el" href="classANN_1_1Connections.html#a68fb3ea6c134af71cbf1b71b6820e622">computeMomentumOnPrevVector()</a>, <a class="el" href="classANN_1_1Connections.html#ab89dbad09b2e0a814ef8749dad7ae4d1">computeWeightDecayOnPrevVector()</a>, <a class="el" href="classANN_1_1Connections.html#a606b3efd9e869b896fa5067505cd0183">Connections()</a>, <a class="el" href="classANN_1_1Connections.html#aaeff830d7496c65025a7f49be0c73f43">copyToPrevVector()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a7068277e8bc61cb5c33c6a9af1b35b57">ANN::BiasConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a2b433bf0a733420eecc39b0170e1a682">ANN::AllAllConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1Connections.html#a90af5d6e735a430e612052988bb91a3a">endUpdate()</a>, <a class="el" href="classANN_1_1Connections.html#ae5be174bf07df8e768d9b4bd1fee0f63">getPrevPtr()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a223de7870d8e5c094d6938c4c129161c">ANN::BiasConnections::loadWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a7d6eb20f2d705e6e718f69dc0b9d1791">ANN::AllAllConnections::loadWeights()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a7185b101f182342981ce57563c872bd7">ANN::BiasConnections::randomizeWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a04d79fa8456b0fc495465afe8a2562ee">ANN::AllAllConnections::randomizeWeights()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a4f5bb2756ff1c33e43e337c78ad49dc6">ANN::BiasConnections::randomizeWeightsAtColumn()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#ab2dbbbea79307ced0db01525ce664ff4">ANN::AllAllConnections::randomizeWeightsAtColumn()</a>, and <a class="el" href="classANN_1_1Connections.html#a155aa9eafe03d64aa80e006743ee9ce4">~Connections()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1BiasConnections.html#aa8f6fe6c996b9e2447302d0cc86cf329">ANN::BiasConnections::clone()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a73ab3b5ff26e2a64219cf195bfe0ff1b">ANN::AllAllConnections::clone()</a>, <a class="el" href="classANN_1_1Connections.html#a68fb3ea6c134af71cbf1b71b6820e622">computeMomentumOnPrevVector()</a>, <a class="el" href="classANN_1_1Connections.html#ab89dbad09b2e0a814ef8749dad7ae4d1">computeWeightDecayOnPrevVector()</a>, <a class="el" href="classANN_1_1Connections.html#a606b3efd9e869b896fa5067505cd0183">Connections()</a>, <a class="el" href="classANN_1_1Connections.html#aaeff830d7496c65025a7f49be0c73f43">copyToPrevVector()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a7068277e8bc61cb5c33c6a9af1b35b57">ANN::BiasConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a2b433bf0a733420eecc39b0170e1a682">ANN::AllAllConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1Connections.html#a90af5d6e735a430e612052988bb91a3a">endUpdate()</a>, <a class="el" href="classANN_1_1Connections.html#ae5be174bf07df8e768d9b4bd1fee0f63">getPrevPtr()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a223de7870d8e5c094d6938c4c129161c">ANN::BiasConnections::loadWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a7d6eb20f2d705e6e718f69dc0b9d1791">ANN::AllAllConnections::loadWeights()</a>, <a class="el" href="classANN_1_1BiasConnections.html#ae08684b09cf56a38fac256060cc12bf9">ANN::BiasConnections::randomizeWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a52cf8409cfefea27032efa8a9cf44179">ANN::AllAllConnections::randomizeWeights()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a1705fdbfbab1bd1ed4a371f0051a0d66">ANN::BiasConnections::randomizeWeightsAtColumn()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#ac64ea45ebc13dc7eeb925a4f7cd956a8">ANN::AllAllConnections::randomizeWeightsAtColumn()</a>, and <a class="el" href="classANN_1_1Connections.html#a155aa9eafe03d64aa80e006743ee9ce4">~Connections()</a>.</p>
 
 </div>
 </div>
@@ -844,7 +908,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1BiasConnections.html#a14ef4b50741c668e94091d461d0559e2">ANN::BiasConnections::checkInputOutputSizes()</a>, <a class="el" href="classANN_1_1BiasConnections.html#aa8f6fe6c996b9e2447302d0cc86cf329">ANN::BiasConnections::clone()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a73ab3b5ff26e2a64219cf195bfe0ff1b">ANN::AllAllConnections::clone()</a>, <a class="el" href="classANN_1_1Connections.html#a68fb3ea6c134af71cbf1b71b6820e622">computeMomentumOnPrevVector()</a>, <a class="el" href="classANN_1_1Connections.html#ab89dbad09b2e0a814ef8749dad7ae4d1">computeWeightDecayOnPrevVector()</a>, <a class="el" href="classANN_1_1Connections.html#aaeff830d7496c65025a7f49be0c73f43">copyToPrevVector()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a7068277e8bc61cb5c33c6a9af1b35b57">ANN::BiasConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1Connections.html#a7ff7bc87aa363f428d60b7fd9c3b96c9">getNumWeights()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a223de7870d8e5c094d6938c4c129161c">ANN::BiasConnections::loadWeights()</a>, <a class="el" href="classANN_1_1Connections.html#a7ff9ab1e6d27d683309821845d3b3c6b">pruneSubnormalAndCheckNormal()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a7185b101f182342981ce57563c872bd7">ANN::BiasConnections::randomizeWeights()</a>, and <a class="el" href="classANN_1_1Connections.html#a730f03374289036fc64dd0f7fabfc170">size()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1BiasConnections.html#a14ef4b50741c668e94091d461d0559e2">ANN::BiasConnections::checkInputOutputSizes()</a>, <a class="el" href="classANN_1_1BiasConnections.html#aa8f6fe6c996b9e2447302d0cc86cf329">ANN::BiasConnections::clone()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a73ab3b5ff26e2a64219cf195bfe0ff1b">ANN::AllAllConnections::clone()</a>, <a class="el" href="classANN_1_1Connections.html#a68fb3ea6c134af71cbf1b71b6820e622">computeMomentumOnPrevVector()</a>, <a class="el" href="classANN_1_1Connections.html#ab89dbad09b2e0a814ef8749dad7ae4d1">computeWeightDecayOnPrevVector()</a>, <a class="el" href="classANN_1_1Connections.html#aaeff830d7496c65025a7f49be0c73f43">copyToPrevVector()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a7068277e8bc61cb5c33c6a9af1b35b57">ANN::BiasConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a2b433bf0a733420eecc39b0170e1a682">ANN::AllAllConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1Connections.html#a7ff7bc87aa363f428d60b7fd9c3b96c9">getNumWeights()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a223de7870d8e5c094d6938c4c129161c">ANN::BiasConnections::loadWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a7d6eb20f2d705e6e718f69dc0b9d1791">ANN::AllAllConnections::loadWeights()</a>, <a class="el" href="classANN_1_1Connections.html#a7ff9ab1e6d27d683309821845d3b3c6b">pruneSubnormalAndCheckNormal()</a>, <a class="el" href="classANN_1_1BiasConnections.html#ae08684b09cf56a38fac256060cc12bf9">ANN::BiasConnections::randomizeWeights()</a>, and <a class="el" href="classANN_1_1Connections.html#a730f03374289036fc64dd0f7fabfc170">size()</a>.</p>
 
 </div>
 </div>
@@ -879,7 +943,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const double ANN::Connections::weightnearzero = 1e-10</td>
+          <td class="memname">const double ANN::Connections::weightnearzero = 1e-7</td>
         </tr>
       </table>
   </td>
@@ -889,7 +953,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1AllAllConnections.html#a04d79fa8456b0fc495465afe8a2562ee">ANN::AllAllConnections::randomizeWeights()</a>, and <a class="el" href="classANN_1_1AllAllConnections.html#ab2dbbbea79307ced0db01525ce664ff4">ANN::AllAllConnections::randomizeWeightsAtColumn()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1BiasConnections.html#ae08684b09cf56a38fac256060cc12bf9">ANN::BiasConnections::randomizeWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a52cf8409cfefea27032efa8a9cf44179">ANN::AllAllConnections::randomizeWeights()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a1705fdbfbab1bd1ed4a371f0051a0d66">ANN::BiasConnections::randomizeWeightsAtColumn()</a>, and <a class="el" href="classANN_1_1AllAllConnections.html#ac64ea45ebc13dc7eeb925a4f7cd956a8">ANN::AllAllConnections::randomizeWeightsAtColumn()</a>.</p>
 
 </div>
 </div>
@@ -911,7 +975,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1BiasConnections.html#aa8f6fe6c996b9e2447302d0cc86cf329">ANN::BiasConnections::clone()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a73ab3b5ff26e2a64219cf195bfe0ff1b">ANN::AllAllConnections::clone()</a>, <a class="el" href="classANN_1_1Connections.html#a68fb3ea6c134af71cbf1b71b6820e622">computeMomentumOnPrevVector()</a>, <a class="el" href="classANN_1_1Connections.html#ab89dbad09b2e0a814ef8749dad7ae4d1">computeWeightDecayOnPrevVector()</a>, <a class="el" href="classANN_1_1Connections.html#a606b3efd9e869b896fa5067505cd0183">Connections()</a>, <a class="el" href="classANN_1_1Connections.html#aaeff830d7496c65025a7f49be0c73f43">copyToPrevVector()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a7068277e8bc61cb5c33c6a9af1b35b57">ANN::BiasConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a2b433bf0a733420eecc39b0170e1a682">ANN::AllAllConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1Connections.html#a90af5d6e735a430e612052988bb91a3a">endUpdate()</a>, <a class="el" href="classANN_1_1Connections.html#ab847b97c79c6b9bc860b0e879c7b9685">getPtr()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a223de7870d8e5c094d6938c4c129161c">ANN::BiasConnections::loadWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a7d6eb20f2d705e6e718f69dc0b9d1791">ANN::AllAllConnections::loadWeights()</a>, <a class="el" href="classANN_1_1Connections.html#a7ff9ab1e6d27d683309821845d3b3c6b">pruneSubnormalAndCheckNormal()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a7185b101f182342981ce57563c872bd7">ANN::BiasConnections::randomizeWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a04d79fa8456b0fc495465afe8a2562ee">ANN::AllAllConnections::randomizeWeights()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a4f5bb2756ff1c33e43e337c78ad49dc6">ANN::BiasConnections::randomizeWeightsAtColumn()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#ab2dbbbea79307ced0db01525ce664ff4">ANN::AllAllConnections::randomizeWeightsAtColumn()</a>, and <a class="el" href="classANN_1_1Connections.html#a155aa9eafe03d64aa80e006743ee9ce4">~Connections()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1BiasConnections.html#aa8f6fe6c996b9e2447302d0cc86cf329">ANN::BiasConnections::clone()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a73ab3b5ff26e2a64219cf195bfe0ff1b">ANN::AllAllConnections::clone()</a>, <a class="el" href="classANN_1_1Connections.html#a68fb3ea6c134af71cbf1b71b6820e622">computeMomentumOnPrevVector()</a>, <a class="el" href="classANN_1_1Connections.html#ab89dbad09b2e0a814ef8749dad7ae4d1">computeWeightDecayOnPrevVector()</a>, <a class="el" href="classANN_1_1Connections.html#a606b3efd9e869b896fa5067505cd0183">Connections()</a>, <a class="el" href="classANN_1_1Connections.html#aaeff830d7496c65025a7f49be0c73f43">copyToPrevVector()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a7068277e8bc61cb5c33c6a9af1b35b57">ANN::BiasConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a2b433bf0a733420eecc39b0170e1a682">ANN::AllAllConnections::copyWeightsTo()</a>, <a class="el" href="classANN_1_1Connections.html#a90af5d6e735a430e612052988bb91a3a">endUpdate()</a>, <a class="el" href="classANN_1_1Connections.html#ab847b97c79c6b9bc860b0e879c7b9685">getPtr()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a223de7870d8e5c094d6938c4c129161c">ANN::BiasConnections::loadWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a7d6eb20f2d705e6e718f69dc0b9d1791">ANN::AllAllConnections::loadWeights()</a>, <a class="el" href="classANN_1_1Connections.html#a7ff9ab1e6d27d683309821845d3b3c6b">pruneSubnormalAndCheckNormal()</a>, <a class="el" href="classANN_1_1BiasConnections.html#ae08684b09cf56a38fac256060cc12bf9">ANN::BiasConnections::randomizeWeights()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#a52cf8409cfefea27032efa8a9cf44179">ANN::AllAllConnections::randomizeWeights()</a>, <a class="el" href="classANN_1_1BiasConnections.html#a1705fdbfbab1bd1ed4a371f0051a0d66">ANN::BiasConnections::randomizeWeightsAtColumn()</a>, <a class="el" href="classANN_1_1AllAllConnections.html#ac64ea45ebc13dc7eeb925a4f7cd956a8">ANN::AllAllConnections::randomizeWeightsAtColumn()</a>, and <a class="el" href="classANN_1_1Connections.html#a155aa9eafe03d64aa80e006743ee9ce4">~Connections()</a>.</p>
 
 </div>
 </div>

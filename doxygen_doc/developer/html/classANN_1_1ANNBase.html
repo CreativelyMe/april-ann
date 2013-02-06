@@ -63,12 +63,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8b3a7630c549ebef1bccfab5d05543c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#ad8b3a7630c549ebef1bccfab5d05543c">registerAction</a> (<a class="el" href="classANN_1_1Action.html">Action</a> *action)</td></tr>
 <tr class="memitem:a8420fbb2edede2d21095da15d4c78bc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a8420fbb2edede2d21095da15d4c78bc2">registerInput</a> (<a class="el" href="classANN_1_1ActivationUnits.html">ActivationUnits</a> *actu)</td></tr>
 <tr class="memitem:af6abeb77d3ec62b8591b94cf2369aca2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput</a> (<a class="el" href="classANN_1_1ActivationUnits.html">ActivationUnits</a> *actu)</td></tr>
+<tr class="memitem:ae9cbd132a177790dbfbcb635bb662536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#ae9cbd132a177790dbfbcb635bb662536">releaseOutput</a> ()</td></tr>
+<tr class="memdesc:ae9cbd132a177790dbfbcb635bb662536"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method converts output neurons into hidden neurons, and it sets output to zero.  <a href="#ae9cbd132a177790dbfbcb635bb662536"></a><br/></td></tr>
 <tr class="memitem:abea557cae19598bbd6ec7f1396602047"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#abea557cae19598bbd6ec7f1396602047">getInputSize</a> () const </td></tr>
 <tr class="memdesc:abea557cae19598bbd6ec7f1396602047"><td class="mdescLeft">&#160;</td><td class="mdescRight">It returns the input (or domain) size of the function.  <a href="#abea557cae19598bbd6ec7f1396602047"></a><br/></td></tr>
 <tr class="memitem:a9c00e3561e8fef17d030f92136752a17"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a9c00e3561e8fef17d030f92136752a17">getOutputSize</a> () const </td></tr>
 <tr class="memdesc:a9c00e3561e8fef17d030f92136752a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">It returns the output (or range) size of the function.  <a href="#a9c00e3561e8fef17d030f92136752a17"></a><br/></td></tr>
+<tr class="memitem:abfbc82f4a9877dd51f32b12fd8b8e842"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#abfbc82f4a9877dd51f32b12fd8b8e842">getLayerConnectionsSize</a> () const </td></tr>
+<tr class="memitem:a19e2c9c75667a76d5ae81c8d755608f5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a19e2c9c75667a76d5ae81c8d755608f5">getLayerActivationsSize</a> () const </td></tr>
 <tr class="memitem:a8f90ca2c8e3d2bc122b64623bbeaff4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classANN_1_1Connections.html">Connections</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a8f90ca2c8e3d2bc122b64623bbeaff4c">getLayerConnections</a> (unsigned int layer)</td></tr>
 <tr class="memitem:a8166192a2a695add33dcdb860bc6fdc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classANN_1_1ActivationUnits.html">ActivationUnits</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a8166192a2a695add33dcdb860bc6fdc9">getLayerActivations</a> (unsigned int layer)</td></tr>
+<tr class="memitem:afc46a7491ab5dd88521449d9d70189ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classANN_1_1Action.html">Action</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#afc46a7491ab5dd88521449d9d70189ae">getAction</a> (unsigned int idx)</td></tr>
 <tr class="memitem:a4adc9d743cabdf8b131e0c1d6af0fd4d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a4adc9d743cabdf8b131e0c1d6af0fd4d">setInput</a> (const float *input, unsigned int bunch_pos)</td></tr>
 <tr class="memitem:a44d1a8bcc5b0a8a1bab3a68044d30cee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a44d1a8bcc5b0a8a1bab3a68044d30cee">copyOutput</a> (float *output, unsigned int bunch_pos)</td></tr>
 <tr class="memitem:a9152391cd3d73b13e0e294002702579f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a9152391cd3d73b13e0e294002702579f">setDesiredOutput</a> (float *target_output, unsigned int bunch_pos)</td></tr>
@@ -83,7 +88,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ca53bd5265a144f17abfe2b37af7dea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a5ca53bd5265a144f17abfe2b37af7dea">setUseCuda</a> (bool use_cuda, bool pinned)</td></tr>
 <tr class="memitem:ab5cf80505c250bc1c7ff00d9bf884845"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#ab5cf80505c250bc1c7ff00d9bf884845">getUseCuda</a> ()</td></tr>
 <tr class="memitem:a53f1bf843d01312ce25a3ae4fdc07ccf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a53f1bf843d01312ce25a3ae4fdc07ccf">getMaxWeights</a> () const </td></tr>
-<tr class="memitem:a7365bad39ddc51f76e29a3de2aa77173"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a7365bad39ddc51f76e29a3de2aa77173">getNumWeights</a> () const =0</td></tr>
+<tr class="memitem:aabaf8d0a3958072e8cb3433d81daec5e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#aabaf8d0a3958072e8cb3433d81daec5e">getNumWeights</a> () const </td></tr>
+<tr class="memitem:a22b4ca88f9b4abacdad878bd803ac075"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classANN_1_1ANNBase.html#a22b4ca88f9b4abacdad878bd803ac075">copyWeightsTo</a> (<a class="el" href="group__matrix.html#ga635261f1d8d7943ab3cfd5b3f24abd26">MatrixFloat</a> **data, <a class="el" href="group__matrix.html#ga635261f1d8d7943ab3cfd5b3f24abd26">MatrixFloat</a> **old_data) const </td></tr>
 <tr class="inherit_header pub_methods_classTrainable_1_1TrainableSupervised"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classTrainable_1_1TrainableSupervised')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classTrainable_1_1TrainableSupervised.html">Trainable::TrainableSupervised</a></td></tr>
 <tr class="memitem:a4a8c0edd88e73955ddd69c393cbb5a11 inherit pub_methods_classTrainable_1_1TrainableSupervised"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrainable_1_1TrainableSupervised.html#a4a8c0edd88e73955ddd69c393cbb5a11">~TrainableSupervised</a> ()</td></tr>
 <tr class="memitem:a6100ed59be45dc3a3f4b651178f27bc4 inherit pub_methods_classTrainable_1_1TrainableSupervised"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTrainable_1_1TrainableSupervised.html#a6100ed59be45dc3a3f4b651178f27bc4">setOption</a> (const char *name, double value)=0</td></tr>
@@ -368,6 +374,44 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a22b4ca88f9b4abacdad878bd803ac075"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ANN::ANNBase::copyWeightsTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__matrix.html#ga635261f1d8d7943ab3cfd5b3f24abd26">MatrixFloat</a> **&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__matrix.html#ga635261f1d8d7943ab3cfd5b3f24abd26">MatrixFloat</a> **&#160;</td>
+          <td class="paramname"><em>old_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classANN_1_1AllAllMLP.html#a1add7a4bd3471d812dbb2a174f1c668c">ANN::AllAllMLP</a>.</p>
+
+<p>References <a class="el" href="classANN_1_1ANNBase.html#a2ba3ea25774a683202a670e076d46226">connections</a>, and <a class="el" href="classANN_1_1ANNBase.html#aabaf8d0a3958072e8cb3433d81daec5e">getNumWeights()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aeeac19c5ad59829e28beda1021a01528"></a>
 <div class="memitem">
 <div class="memproto">
@@ -417,6 +461,24 @@ Protected Attributes</h2></td></tr>
 <p>Implemented in <a class="el" href="classANN_1_1MLP.html#a2d1d64e69241151ecd0bf5dd326db9ee">ANN::MLP</a>.</p>
 
 <p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a87a5c875bece680a293bfe258c0670bd">calculate()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a2df1ba9df38cc457ba3916aa583dd8b2">calculateInPipeline()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc46a7491ab5dd88521449d9d70189ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classANN_1_1Action.html">Action</a> * ANN::ANNBase::getAction </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classANN_1_1ANNBase.html#ac727632123f20d0df474b9f1c19c6441">actions</a>, and <a class="el" href="group__util.html#ga7c141183788078513c128e5f0bb15f48">ERROR_EXIT</a>.</p>
 
 </div>
 </div>
@@ -470,7 +532,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classANN_1_1ANNBase.html#aae59625b775ac9f7c04690fab642bb74">conf</a>.</p>
 
-<p>Referenced by <a class="el" href="classANN_1_1MLP.html#a3e389bd5603c9b1f5520906829005e37">ANN::MLP::clone()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1MLP.html#a3e389bd5603c9b1f5520906829005e37">ANN::MLP::clone()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, and <a class="el" href="classANN_1_1MLP.html#a4af35eabc17083d5f3573fd9cc87c2cc">ANN::MLP::pushBackAllAllLayer()</a>.</p>
 
 </div>
 </div>
@@ -523,6 +585,31 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a19e2c9c75667a76d5ae81c8d755608f5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ANN::ANNBase::getLayerActivationsSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classANN_1_1ANNBase.html#ad775c11dc271983b744b3227af6d3a01">activations</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a8f90ca2c8e3d2bc122b64623bbeaff4c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -538,6 +625,31 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>References <a class="el" href="classANN_1_1ANNBase.html#a2ba3ea25774a683202a670e076d46226">connections</a>, and <a class="el" href="group__util.html#ga67ef1a4a9e547e0d05a132d5eebc8355">ERROR_PRINT</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abfbc82f4a9877dd51f32b12fd8b8e842"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int ANN::ANNBase::getLayerConnectionsSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>References <a class="el" href="classANN_1_1ANNBase.html#a2ba3ea25774a683202a670e076d46226">connections</a>.</p>
 
 </div>
 </div>
@@ -581,7 +693,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7365bad39ddc51f76e29a3de2aa77173"></a>
+<a class="anchor" id="aabaf8d0a3958072e8cb3433d81daec5e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -589,7 +701,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual unsigned int ANN::ANNBase::getNumWeights </td>
+          <td class="memname">unsigned int ANN::ANNBase::getNumWeights </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -597,12 +709,14 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classANN_1_1MLP.html#a0cd4a4eb7fcc95096948b74631ca2c07">ANN::MLP</a>.</p>
+<p>References <a class="el" href="classANN_1_1ANNBase.html#a2ba3ea25774a683202a670e076d46226">connections</a>.</p>
+
+<p>Referenced by <a class="el" href="classANN_1_1AllAllMLP.html#a1add7a4bd3471d812dbb2a174f1c668c">ANN::AllAllMLP::copyWeightsTo()</a>, <a class="el" href="classANN_1_1ANNBase.html#a22b4ca88f9b4abacdad878bd803ac075">copyWeightsTo()</a>, and <a class="el" href="classANN_1_1AllAllMLP.html#a656b13b8f8c0407903d3c8fa5c63f064">ANN::AllAllMLP::generateAllAll()</a>.</p>
 
 </div>
 </div>
@@ -724,7 +838,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classANN_1_1ANNBase.html#ac727632123f20d0df474b9f1c19c6441">actions</a>, and <a class="el" href="group__util.html#gaee8c908dd2bea7674e4c19493005ce68">IncRef</a>.</p>
 
-<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, and <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>, and <a class="el" href="classANN_1_1MLP.html#a4af35eabc17083d5f3573fd9cc87c2cc">ANN::MLP::pushBackAllAllLayer()</a>.</p>
 
 </div>
 </div>
@@ -764,7 +878,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classANN_1_1ANNBase.html#a2ba3ea25774a683202a670e076d46226">connections</a>, and <a class="el" href="group__util.html#gaee8c908dd2bea7674e4c19493005ce68">IncRef</a>.</p>
 
-<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, and <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>, and <a class="el" href="classANN_1_1MLP.html#a4af35eabc17083d5f3573fd9cc87c2cc">ANN::MLP::pushBackAllAllLayer()</a>.</p>
 
 </div>
 </div>
@@ -805,6 +919,33 @@ Protected Attributes</h2></td></tr>
 <p>References <a class="el" href="classANN_1_1ANNBase.html#aae59625b775ac9f7c04690fab642bb74">conf</a>, <a class="el" href="classANN_1_1ANNBase.html#af758711c43db9e25bacb1bf0194c42d6">desired_output</a>, <a class="el" href="group__util.html#ga7c141183788078513c128e5f0bb15f48">ERROR_EXIT</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a664002a9fe5c892d98a864ff5b2549ea">ANN::ActivationUnits::getErrorVectorPtr()</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a74876abc836d8175095b8f1d8cc50a03">ANN::ActivationUnits::getPtr()</a>, <a class="el" href="structANNConfiguration.html#a91fd4386ee095907f82fb33ef2b226ee">ANNConfiguration::max_bunch_size</a>, <a class="el" href="classANN_1_1ANNBase.html#ab6383665d993efa2925a3ac2461175f2">output_errors</a>, <a class="el" href="classANN_1_1ANNBase.html#a2f3e6f708ab96f14fd5c5c9479e4145c">output_neurons</a>, <a class="el" href="classANN_1_1ANNBase.html#a97414f7672828a8067554d7f1c703e9e">pattern_errors</a>, <a class="el" href="classANN_1_1ActivationUnits.html#a87b6cb36157fa4db8af6ae7f96514e44">ANN::ActivationUnits::size()</a>, and <a class="el" href="classANN_1_1ANNBase.html#ae22a78467a7d115aef7dc52f6f1ab781">total_num_outputs</a>.</p>
 
 <p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, and <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae9cbd132a177790dbfbcb635bb662536"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ANN::ANNBase::releaseOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method converts output neurons into hidden neurons, and it sets output to zero. </p>
+
+<p>References <a class="el" href="classANN_1_1ANNBase.html#ad775c11dc271983b744b3227af6d3a01">activations</a>, <a class="el" href="classANN_1_1ANNBase.html#af758711c43db9e25bacb1bf0194c42d6">desired_output</a>, <a class="el" href="namespaceANN.html#a27380fa05ccdef05cbe2f5bbf0b6dfd1a350e1e9e626d61c8796b2dd8c62a3056">ANN::HIDDEN_TYPE</a>, <a class="el" href="classANN_1_1ANNBase.html#ab6383665d993efa2925a3ac2461175f2">output_errors</a>, <a class="el" href="classANN_1_1ANNBase.html#a2f3e6f708ab96f14fd5c5c9479e4145c">output_neurons</a>, <a class="el" href="namespaceANN.html#a27380fa05ccdef05cbe2f5bbf0b6dfd1a682ef8f6928b6e3ec7c06a6f2b981422">ANN::OUTPUTS_TYPE</a>, <a class="el" href="classANN_1_1ANNBase.html#a97414f7672828a8067554d7f1c703e9e">pattern_errors</a>, and <a class="el" href="classANN_1_1ANNBase.html#ae22a78467a7d115aef7dc52f6f1ab781">total_num_outputs</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1144,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1MLP.html#a2a4532e2a46de55231df12a388bd20a0">ANN::MLP::doBackward()</a>, <a class="el" href="classANN_1_1MLP.html#a2d1d64e69241151ecd0bf5dd326db9ee">ANN::MLP::doForward()</a>, <a class="el" href="classANN_1_1ANNBase.html#ad8b3a7630c549ebef1bccfab5d05543c">registerAction()</a>, <a class="el" href="classANN_1_1MLP.html#a5f5df8ab73044c430005b1f18f031bca">ANN::MLP::setOption()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1MLP.html#a2a4532e2a46de55231df12a388bd20a0">ANN::MLP::doBackward()</a>, <a class="el" href="classANN_1_1MLP.html#a2d1d64e69241151ecd0bf5dd326db9ee">ANN::MLP::doForward()</a>, <a class="el" href="classANN_1_1ANNBase.html#afc46a7491ab5dd88521449d9d70189ae">getAction()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a9155acfb76e1f61cdb8e189cae9cd560">ANN::AllAllMLP::randomizeWeights()</a>, <a class="el" href="classANN_1_1MLP.html#af7270f73ea832288f83294b785b0ca6a">ANN::MLP::randomizeWeights()</a>, <a class="el" href="classANN_1_1ANNBase.html#ad8b3a7630c549ebef1bccfab5d05543c">registerAction()</a>, <a class="el" href="classANN_1_1MLP.html#a5f5df8ab73044c430005b1f18f031bca">ANN::MLP::setOption()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
 
 </div>
 </div>
@@ -1025,7 +1166,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#aa783daca79d12078db8f90467626c694">ANN::AllAllMLP::copyWeightsToMatrix()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a656b13b8f8c0407903d3c8fa5c63f064">ANN::AllAllMLP::generateAllAll()</a>, <a class="el" href="classANN_1_1ANNBase.html#a8166192a2a695add33dcdb860bc6fdc9">getLayerActivations()</a>, <a class="el" href="classANN_1_1ANNBase.html#aa396b9917e60bb8332c79f68977a5328">registerActivationUnits()</a>, <a class="el" href="classANN_1_1ANNBase.html#a932d47c34d5ff40a83e326af71ce1111">resetErrorVectors()</a>, <a class="el" href="classANN_1_1MLP.html#a9ea5f5783e525a6864a4f7af9bf0057c">ANN::MLP::showActivations()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a1add7a4bd3471d812dbb2a174f1c668c">ANN::AllAllMLP::copyWeightsTo()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a656b13b8f8c0407903d3c8fa5c63f064">ANN::AllAllMLP::generateAllAll()</a>, <a class="el" href="classANN_1_1ANNBase.html#a8166192a2a695add33dcdb860bc6fdc9">getLayerActivations()</a>, <a class="el" href="classANN_1_1ANNBase.html#a19e2c9c75667a76d5ae81c8d755608f5">getLayerActivationsSize()</a>, <a class="el" href="classANN_1_1ANNBase.html#aa396b9917e60bb8332c79f68977a5328">registerActivationUnits()</a>, <a class="el" href="classANN_1_1ANNBase.html#ae9cbd132a177790dbfbcb635bb662536">releaseOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a932d47c34d5ff40a83e326af71ce1111">resetErrorVectors()</a>, <a class="el" href="classANN_1_1MLP.html#a9ea5f5783e525a6864a4f7af9bf0057c">ANN::MLP::showActivations()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
 
 </div>
 </div>
@@ -1047,7 +1188,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a87a5c875bece680a293bfe258c0670bd">calculate()</a>, <a class="el" href="classANN_1_1ANNBase.html#a2df1ba9df38cc457ba3916aa583dd8b2">calculateInPipeline()</a>, <a class="el" href="classANN_1_1ANNBase.html#a44d1a8bcc5b0a8a1bab3a68044d30cee">copyOutput()</a>, <a class="el" href="classANN_1_1MLP.html#a47c1b932e1c9cb477aa0ff0287704b76">ANN::MLP::doTraining()</a>, <a class="el" href="classANN_1_1MLP.html#ad44c1c5af1c18da8dfeaf737f01574d7">ANN::MLP::endTrainingBatch()</a>, <a class="el" href="classANN_1_1MLP.html#a7c95c7f92bd79e75d33d21dce38d5c10">ANN::MLP::endValidateBatch()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>, <a class="el" href="classANN_1_1ANNBase.html#abfc197dce7cfab2759290688354e7f52">getConf()</a>, <a class="el" href="classANN_1_1ANNBase.html#ad437607f08ddda95a3f99765da9261df">getConfReference()</a>, <a class="el" href="classANN_1_1ANNBase.html#ab38300816837ee43b6555fcd5bdb6f6b">getNumBunch()</a>, <a class="el" href="classANN_1_1ANNBase.html#ab5cf80505c250bc1c7ff00d9bf884845">getUseCuda()</a>, <a class="el" href="classANN_1_1ANNBase.html#a347a384930f3ef1e506fdef804a273f4">patternErrorsSum()</a>, <a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a932d47c34d5ff40a83e326af71ce1111">resetErrorVectors()</a>, <a class="el" href="classANN_1_1ANNBase.html#a15bf7ca911918cb7bcf443242c21e7e0">resetPatternErrorsAuxiliarVector()</a>, <a class="el" href="classANN_1_1ANNBase.html#a9152391cd3d73b13e0e294002702579f">setDesiredOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a4adc9d743cabdf8b131e0c1d6af0fd4d">setInput()</a>, <a class="el" href="classANN_1_1ANNBase.html#aee356e870039b447b20d9e39d9d28f7e">setNumBunch()</a>, <a class="el" href="classANN_1_1ANNBase.html#a5ca53bd5265a144f17abfe2b37af7dea">setUseCuda()</a>, <a class="el" href="classANN_1_1MLP.html#a9ea5f5783e525a6864a4f7af9bf0057c">ANN::MLP::showActivations()</a>, <a class="el" href="classANN_1_1MLP.html#ae5352225c1cfcb53bba08e06beb700d1">ANN::MLP::trainPattern()</a>, and <a class="el" href="classANN_1_1MLP.html#afd50ec996ab5d51495e556126725a8d6">ANN::MLP::validatePattern()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a87a5c875bece680a293bfe258c0670bd">calculate()</a>, <a class="el" href="classANN_1_1ANNBase.html#a2df1ba9df38cc457ba3916aa583dd8b2">calculateInPipeline()</a>, <a class="el" href="classANN_1_1ANNBase.html#a44d1a8bcc5b0a8a1bab3a68044d30cee">copyOutput()</a>, <a class="el" href="classANN_1_1MLP.html#a47c1b932e1c9cb477aa0ff0287704b76">ANN::MLP::doTraining()</a>, <a class="el" href="classANN_1_1MLP.html#ad44c1c5af1c18da8dfeaf737f01574d7">ANN::MLP::endTrainingBatch()</a>, <a class="el" href="classANN_1_1MLP.html#a7c95c7f92bd79e75d33d21dce38d5c10">ANN::MLP::endValidateBatch()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>, <a class="el" href="classANN_1_1ANNBase.html#abfc197dce7cfab2759290688354e7f52">getConf()</a>, <a class="el" href="classANN_1_1ANNBase.html#ad437607f08ddda95a3f99765da9261df">getConfReference()</a>, <a class="el" href="classANN_1_1ANNBase.html#ab38300816837ee43b6555fcd5bdb6f6b">getNumBunch()</a>, <a class="el" href="classANN_1_1ANNBase.html#ab5cf80505c250bc1c7ff00d9bf884845">getUseCuda()</a>, <a class="el" href="classANN_1_1ANNBase.html#a347a384930f3ef1e506fdef804a273f4">patternErrorsSum()</a>, <a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a932d47c34d5ff40a83e326af71ce1111">resetErrorVectors()</a>, <a class="el" href="classANN_1_1ANNBase.html#a15bf7ca911918cb7bcf443242c21e7e0">resetPatternErrorsAuxiliarVector()</a>, <a class="el" href="classANN_1_1ANNBase.html#a9152391cd3d73b13e0e294002702579f">setDesiredOutput()</a>, <a class="el" href="classANN_1_1MLP.html#abbd39e8494577cb1f9632a5937f76fa1">ANN::MLP::setErrorFunction()</a>, <a class="el" href="classANN_1_1ANNBase.html#a4adc9d743cabdf8b131e0c1d6af0fd4d">setInput()</a>, <a class="el" href="classANN_1_1ANNBase.html#aee356e870039b447b20d9e39d9d28f7e">setNumBunch()</a>, <a class="el" href="classANN_1_1ANNBase.html#a5ca53bd5265a144f17abfe2b37af7dea">setUseCuda()</a>, <a class="el" href="classANN_1_1MLP.html#a9ea5f5783e525a6864a4f7af9bf0057c">ANN::MLP::showActivations()</a>, <a class="el" href="classANN_1_1MLP.html#ae5352225c1cfcb53bba08e06beb700d1">ANN::MLP::trainPattern()</a>, and <a class="el" href="classANN_1_1MLP.html#afd50ec996ab5d51495e556126725a8d6">ANN::MLP::validatePattern()</a>.</p>
 
 </div>
 </div>
@@ -1069,7 +1210,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#aa783daca79d12078db8f90467626c694">ANN::AllAllMLP::copyWeightsToMatrix()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a656b13b8f8c0407903d3c8fa5c63f064">ANN::AllAllMLP::generateAllAll()</a>, <a class="el" href="classANN_1_1ANNBase.html#a8f90ca2c8e3d2bc122b64623bbeaff4c">getLayerConnections()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#aaeec4bebbfca13bf61c1e64958e8a6ea">ANN::AllAllMLP::getNumberOfWeights()</a>, <a class="el" href="classANN_1_1MLP.html#a0cd4a4eb7fcc95096948b74631ca2c07">ANN::MLP::getNumWeights()</a>, <a class="el" href="classANN_1_1ANNBase.html#a9a01f0686be40d643a6530c933638067">pruneSubnormalAndCheckNormal()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#aa00e07e6f7aed2a44a695fe53bee08ea">ANN::AllAllMLP::randomizeWeights()</a>, <a class="el" href="classANN_1_1MLP.html#a3fb3b10f04dcb822d5ee67b39e6a483c">ANN::MLP::randomizeWeights()</a>, <a class="el" href="classANN_1_1ANNBase.html#a3b707a80c52d98cb37b16c0a2511f233">registerConnections()</a>, <a class="el" href="classANN_1_1MLP.html#a2a24041973e3ee0c41c9b5f07e0038e8">ANN::MLP::showWeights()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a1add7a4bd3471d812dbb2a174f1c668c">ANN::AllAllMLP::copyWeightsTo()</a>, <a class="el" href="classANN_1_1ANNBase.html#a22b4ca88f9b4abacdad878bd803ac075">copyWeightsTo()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a5c2ebd9a9fce3491684086cda3ff9912">ANN::AllAllMLP::generateActionsAllAll()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a656b13b8f8c0407903d3c8fa5c63f064">ANN::AllAllMLP::generateAllAll()</a>, <a class="el" href="classANN_1_1ANNBase.html#a8f90ca2c8e3d2bc122b64623bbeaff4c">getLayerConnections()</a>, <a class="el" href="classANN_1_1ANNBase.html#abfbc82f4a9877dd51f32b12fd8b8e842">getLayerConnectionsSize()</a>, <a class="el" href="classANN_1_1ANNBase.html#aabaf8d0a3958072e8cb3433d81daec5e">getNumWeights()</a>, <a class="el" href="classANN_1_1ANNBase.html#a9a01f0686be40d643a6530c933638067">pruneSubnormalAndCheckNormal()</a>, <a class="el" href="classANN_1_1AllAllMLP.html#a9155acfb76e1f61cdb8e189cae9cd560">ANN::AllAllMLP::randomizeWeights()</a>, <a class="el" href="classANN_1_1MLP.html#af7270f73ea832288f83294b785b0ca6a">ANN::MLP::randomizeWeights()</a>, <a class="el" href="classANN_1_1ANNBase.html#a3b707a80c52d98cb37b16c0a2511f233">registerConnections()</a>, <a class="el" href="classANN_1_1MLP.html#a2a24041973e3ee0c41c9b5f07e0038e8">ANN::MLP::showWeights()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
 
 </div>
 </div>
@@ -1091,7 +1232,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#ae25ccacda2a819a8b5e5292210784266">ANNBase()</a>, <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1MLP.html#a47c1b932e1c9cb477aa0ff0287704b76">ANN::MLP::doTraining()</a>, <a class="el" href="classANN_1_1MLP.html#a7c95c7f92bd79e75d33d21dce38d5c10">ANN::MLP::endValidateBatch()</a>, <a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a9152391cd3d73b13e0e294002702579f">setDesiredOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a5ca53bd5265a144f17abfe2b37af7dea">setUseCuda()</a>, <a class="el" href="classANN_1_1MLP.html#afd50ec996ab5d51495e556126725a8d6">ANN::MLP::validatePattern()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#ae25ccacda2a819a8b5e5292210784266">ANNBase()</a>, <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1MLP.html#a47c1b932e1c9cb477aa0ff0287704b76">ANN::MLP::doTraining()</a>, <a class="el" href="classANN_1_1MLP.html#a7c95c7f92bd79e75d33d21dce38d5c10">ANN::MLP::endValidateBatch()</a>, <a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#ae9cbd132a177790dbfbcb635bb662536">releaseOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a9152391cd3d73b13e0e294002702579f">setDesiredOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a5ca53bd5265a144f17abfe2b37af7dea">setUseCuda()</a>, <a class="el" href="classANN_1_1MLP.html#afd50ec996ab5d51495e556126725a8d6">ANN::MLP::validatePattern()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1276,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#ae25ccacda2a819a8b5e5292210784266">ANNBase()</a>, <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1MLP.html#a47c1b932e1c9cb477aa0ff0287704b76">ANN::MLP::doTraining()</a>, <a class="el" href="classANN_1_1MLP.html#a7c95c7f92bd79e75d33d21dce38d5c10">ANN::MLP::endValidateBatch()</a>, <a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput()</a>, and <a class="el" href="classANN_1_1MLP.html#afd50ec996ab5d51495e556126725a8d6">ANN::MLP::validatePattern()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#ae25ccacda2a819a8b5e5292210784266">ANNBase()</a>, <a class="el" href="classANN_1_1ANNBase.html#a5dac26f38c1477809bd16bbffda94d51">clearTopology()</a>, <a class="el" href="classANN_1_1MLP.html#a47c1b932e1c9cb477aa0ff0287704b76">ANN::MLP::doTraining()</a>, <a class="el" href="classANN_1_1MLP.html#a7c95c7f92bd79e75d33d21dce38d5c10">ANN::MLP::endValidateBatch()</a>, <a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#ae9cbd132a177790dbfbcb635bb662536">releaseOutput()</a>, and <a class="el" href="classANN_1_1MLP.html#afd50ec996ab5d51495e556126725a8d6">ANN::MLP::validatePattern()</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1298,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#ae25ccacda2a819a8b5e5292210784266">ANNBase()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1ANNBase.html#a44d1a8bcc5b0a8a1bab3a68044d30cee">copyOutput()</a>, <a class="el" href="classANN_1_1MLP.html#a47c1b932e1c9cb477aa0ff0287704b76">ANN::MLP::doTraining()</a>, <a class="el" href="classANN_1_1MLP.html#a7c95c7f92bd79e75d33d21dce38d5c10">ANN::MLP::endValidateBatch()</a>, <a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a5ca53bd5265a144f17abfe2b37af7dea">setUseCuda()</a>, and <a class="el" href="classANN_1_1MLP.html#afd50ec996ab5d51495e556126725a8d6">ANN::MLP::validatePattern()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#ae25ccacda2a819a8b5e5292210784266">ANNBase()</a>, <a class="el" href="classANN_1_1ANNBase.html#a7aa8a206e83a38b17de3dcb2f5f643ef">cloneTopologyTo()</a>, <a class="el" href="classANN_1_1ANNBase.html#a44d1a8bcc5b0a8a1bab3a68044d30cee">copyOutput()</a>, <a class="el" href="classANN_1_1MLP.html#a47c1b932e1c9cb477aa0ff0287704b76">ANN::MLP::doTraining()</a>, <a class="el" href="classANN_1_1MLP.html#a7c95c7f92bd79e75d33d21dce38d5c10">ANN::MLP::endValidateBatch()</a>, <a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#ae9cbd132a177790dbfbcb635bb662536">releaseOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a5ca53bd5265a144f17abfe2b37af7dea">setUseCuda()</a>, and <a class="el" href="classANN_1_1MLP.html#afd50ec996ab5d51495e556126725a8d6">ANN::MLP::validatePattern()</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +1320,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#ae25ccacda2a819a8b5e5292210784266">ANNBase()</a>, <a class="el" href="classANN_1_1MLP.html#a47c1b932e1c9cb477aa0ff0287704b76">ANN::MLP::doTraining()</a>, <a class="el" href="classANN_1_1MLP.html#a7c95c7f92bd79e75d33d21dce38d5c10">ANN::MLP::endValidateBatch()</a>, <a class="el" href="classANN_1_1ANNBase.html#a347a384930f3ef1e506fdef804a273f4">patternErrorsSum()</a>, <a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a15bf7ca911918cb7bcf443242c21e7e0">resetPatternErrorsAuxiliarVector()</a>, <a class="el" href="classANN_1_1MLP.html#afd50ec996ab5d51495e556126725a8d6">ANN::MLP::validatePattern()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#ae25ccacda2a819a8b5e5292210784266">ANNBase()</a>, <a class="el" href="classANN_1_1MLP.html#a47c1b932e1c9cb477aa0ff0287704b76">ANN::MLP::doTraining()</a>, <a class="el" href="classANN_1_1MLP.html#a7c95c7f92bd79e75d33d21dce38d5c10">ANN::MLP::endValidateBatch()</a>, <a class="el" href="classANN_1_1ANNBase.html#a347a384930f3ef1e506fdef804a273f4">patternErrorsSum()</a>, <a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#ae9cbd132a177790dbfbcb635bb662536">releaseOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a15bf7ca911918cb7bcf443242c21e7e0">resetPatternErrorsAuxiliarVector()</a>, <a class="el" href="classANN_1_1MLP.html#afd50ec996ab5d51495e556126725a8d6">ANN::MLP::validatePattern()</a>, and <a class="el" href="classANN_1_1ANNBase.html#a8e9871e87876259c4c9792fb572ac0d1">~ANNBase()</a>.</p>
 
 </div>
 </div>
@@ -1223,7 +1364,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#ae25ccacda2a819a8b5e5292210784266">ANNBase()</a>, <a class="el" href="classANN_1_1ANNBase.html#a44d1a8bcc5b0a8a1bab3a68044d30cee">copyOutput()</a>, <a class="el" href="classANN_1_1MLP.html#a47c1b932e1c9cb477aa0ff0287704b76">ANN::MLP::doTraining()</a>, <a class="el" href="classANN_1_1MLP.html#a7c95c7f92bd79e75d33d21dce38d5c10">ANN::MLP::endValidateBatch()</a>, <a class="el" href="classANN_1_1ANNBase.html#a9c00e3561e8fef17d030f92136752a17">getOutputSize()</a>, <a class="el" href="classANN_1_1ANNBase.html#a347a384930f3ef1e506fdef804a273f4">patternErrorsSum()</a>, <a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a15bf7ca911918cb7bcf443242c21e7e0">resetPatternErrorsAuxiliarVector()</a>, <a class="el" href="classANN_1_1ANNBase.html#a9152391cd3d73b13e0e294002702579f">setDesiredOutput()</a>, and <a class="el" href="classANN_1_1MLP.html#afd50ec996ab5d51495e556126725a8d6">ANN::MLP::validatePattern()</a>.</p>
+<p>Referenced by <a class="el" href="classANN_1_1ANNBase.html#ae25ccacda2a819a8b5e5292210784266">ANNBase()</a>, <a class="el" href="classANN_1_1ANNBase.html#a44d1a8bcc5b0a8a1bab3a68044d30cee">copyOutput()</a>, <a class="el" href="classANN_1_1MLP.html#a47c1b932e1c9cb477aa0ff0287704b76">ANN::MLP::doTraining()</a>, <a class="el" href="classANN_1_1MLP.html#a7c95c7f92bd79e75d33d21dce38d5c10">ANN::MLP::endValidateBatch()</a>, <a class="el" href="classANN_1_1ANNBase.html#a9c00e3561e8fef17d030f92136752a17">getOutputSize()</a>, <a class="el" href="classANN_1_1ANNBase.html#a347a384930f3ef1e506fdef804a273f4">patternErrorsSum()</a>, <a class="el" href="classANN_1_1ANNBase.html#af6abeb77d3ec62b8591b94cf2369aca2">registerOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#ae9cbd132a177790dbfbcb635bb662536">releaseOutput()</a>, <a class="el" href="classANN_1_1ANNBase.html#a15bf7ca911918cb7bcf443242c21e7e0">resetPatternErrorsAuxiliarVector()</a>, <a class="el" href="classANN_1_1ANNBase.html#a9152391cd3d73b13e0e294002702579f">setDesiredOutput()</a>, and <a class="el" href="classANN_1_1MLP.html#afd50ec996ab5d51495e556126725a8d6">ANN::MLP::validatePattern()</a>.</p>
 
 </div>
 </div>
