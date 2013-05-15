@@ -790,6 +790,30 @@ function table.deep_copy(t)
   return ret
 end
 
+-- Warning: this function makes a DEEP copy of LUA tables into a LUA string
+function table.to_string(t)
+  local ret = { "{" }
+  for i,v in pairs(t) do
+    local aux = {}
+    if type(i) == "string" then
+      table.insert(aux, string.format("[\"%s\"] = ", i))
+    elseif type(i) == "number" then
+      table.insert(aux, "[" .. i .. "] = ")
+    else
+      error("The key type is not allowed (only string and number): " .. type(i))
+    end
+    if type(v) == "table" then
+      table.insert(aux, table.to_string(v))
+    else
+      table.insert(aux, tostring(v))
+    end
+    table.insert(aux, ",")
+    table.insert(ret, table.concat(aux))
+  end
+  table.insert(ret, "}")
+  return table.concat(ret, "\n")
+end
+
 function table.expand(t)
    local result={}
    for i=1,table.getn(t),2 do

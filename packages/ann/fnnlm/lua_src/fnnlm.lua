@@ -101,10 +101,36 @@ function ann.fnnlm:get_component()
   return self.ann_component
 end
 
+function ann.fnnlm:get_trainer()
+  return self.trainer
+end
+
 function ann.fnnlm:set_dropout(value)
   for name,component in obj.trainer:iterate_components("^.*actf.*$") do
     if not name:match("^factor_.*_1_actf$") then
       component:set_option("dropout",value)
     end
   end
+end
+
+function ann.fnnlm:save(filename, binary)
+  local binary         = binary or "binary"
+  local params_string  = table.to_string(self.params)
+  local trainer_string = self.trainer:to_string(binary)
+  local f = io.open(filename, "w") or error("Unable to open: " .. filename)
+  f:write("return {\n")
+  f:write("params = "  .. params_string .. ",\n")
+  f:write("trainer = " .. trainer_string .. ",\n")
+  f:write("}\n")
+  f:close()
+end
+
+function ann.fnnlm.load(filename)
+  local f = loadfile(filename) or error("Unable to open " .. filename)
+  local t = f() or error("Impossible to load chunk from file " .. filename)
+  local params  = t.params
+  local obj     = ann.fnnlm(params)
+  obj.trainer:build()
+  obj.trainer:load_from_table(t.trainer)
+  return obj
 end

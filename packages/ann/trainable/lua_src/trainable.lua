@@ -106,6 +106,41 @@ end
 
 ------------------------------------------------------------------------
 
+april_set_doc("trainable.supervised_trainer.to_string", {
+		class = "method",
+		summary = "Save the model to a string",
+		description = {
+		  "Save the model to a string (only weights).",
+		  "Only works after build method is called.",
+		},
+		params = {
+		  { "A string indicating the matrix format: ascii or binary",
+		    "[optional]. By default is 'binary'." },
+		},
+		outputs = {
+		  "A string with the model (only weights)",
+		}, })
+
+function trainable.supervised_trainer:to_string(binary)
+  assert(#self.weights_order > 0, "The component is not built")
+  local binary = binary or "binary"
+  local t = { "{" }
+  for _,wname in ipairs(self.weights_order) do
+    local cobj = self.weights_table[wname]
+    local w,oldw = cobj:weights()
+    table.insert(t, "[\"".. wname .. "\"] = {")
+    table.insert(t, "input = " .. cobj:get_input_size() .. ",")
+    table.insert(t, "output = " .. cobj:get_output_size() .. ",")
+    table.insert(t, "w = matrix.fromString[[" .. w:toString(binary) .. "]],")
+    table.insert(t, "oldw = matrix.fromString[["..oldw:toString(binary).."]],")
+    table.insert("},")
+  end
+  table.insert("}")
+  return table.concat(t, "\n")
+end
+
+------------------------------------------------------------------------
+
 april_set_doc("trainable.supervised_trainer.save", {
 		class = "method",
 		summary = "Save the model at a disk file",
@@ -124,42 +159,25 @@ function trainable.supervised_trainer:save(filename, binary)
   assert(#self.weights_order > 0, "The component is not built")
   local binary = binary or "binary"
   local f = io.open(filename,"w") or error("Unable to open " .. filename)
-  f:write("return {")
-  for _,wname in ipairs(self.weights_order) do
-    local cobj = self.weights_table[wname]
-    local w,oldw = cobj:weights()
-    f:write("\n[\"".. wname .. "\"] = {")
-    f:write("\ninput = " .. cobj:get_input_size() .. ",")
-    f:write("\noutput = " .. cobj:get_output_size() .. ",")
-    f:write("\nw = matrix.fromString[[" .. w:toString(binary) .. "]],")
-    f:write("\noldw = matrix.fromString[[" .. oldw:toString(binary) .. "]],")
-    f:write("\n},")
-  end
-  f:write("\n}\n")
+  f:write("return " .. self:to_string(binary))
   f:close()
 end
 
 ------------------------------------------------------------------------
 
-april_set_doc("trainable.supervised_trainer.load", {
+april_set_doc("trainable.supervised_trainer.load_from_table", {
 		class = "method",
-		summary = "Load the model weiths from a disk file",
+		summary = "Load the model weigths from a Lua table",
 		description = {
-		  "Load the connection weights stored at",
-		  "a disk file.",
+		  "Load the model weights stored at a Lua table.",
 		  "Only works after build method is called.",
 		},
 		params = {
-		  "A filename string",
-		  { "A string indicating the matrix format: ascii or binary",
-		    "[optional]. By default is binary." },
+		  "A Lua table",
 		}, })
 
-function trainable.supervised_trainer:load(filename)
+function trainable.supervised_trainer:load_from_table(t)
   assert(#self.weights_order > 0, "The component is not built")
-  local binary = binary or "binary"
-  local f = loadfile(filename) or error("Unable to open " .. filename)
-  local t = f() or error("Impossible to load chunk from file " .. filename)
   for _,wname in ipairs(self.weights_order) do
     local cobj = self.weights_table[wname]
     local w,oldw = t[wname].w,t[wname].oldw
@@ -171,6 +189,27 @@ function trainable.supervised_trainer:load(filename)
 			 cobj:get_output_size(), t[wname].output))
     cobj:load{ w=w, oldw=oldw }
   end
+end
+
+------------------------------------------------------------------------
+
+april_set_doc("trainable.supervised_trainer.load", {
+		class = "method",
+		summary = "Load the model weigths from a disk file",
+		description = {
+		  "Load the connection weights stored at",
+		  "a disk file.",
+		  "Only works after build method is called.",
+		},
+		params = {
+		  "A filename string",
+		}, })
+
+function trainable.supervised_trainer:load(filename)
+  assert(#self.weights_order > 0, "The component is not built")
+  local f = loadfile(filename) or error("Unable to open " .. filename)
+  local t = f() or error("Impossible to load chunk from file " .. filename)
+  self:load_from_table(t)
 end
 
 ------------------------------------------------------------------------
