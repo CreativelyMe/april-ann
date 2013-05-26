@@ -379,9 +379,9 @@ april_set_doc("trainable.supervised_trainer.randomize_weights", {
 		    "distribution, in the range [c*inf,c*sup].",
 		    "Constant c depends on fan-in and/or fan-out fields.",
 		    "If fan-in and fan-out are false, then c=1.",
-		    "If fan-in=true and fan-out=false, then c=fanin.",
-		    "If fan-in=false and fan-out=true, then c=fanout.",
-		    "If fan-in and fan-out are true, then c=fanin + fanout.",
+		    "If fan-in=true and fan-out=false, then c=1/sqrt(fanin).",
+		    "If fan-in=false and fan-out=true, then c=1/sqrt(fanout).",
+		    "If fan-in and fan-out are true, then c=1/sqrt(fanin + fanout).",
 		  },
 		params = {
 		  ["random"] = "A random object",
@@ -1107,8 +1107,8 @@ april_set_doc("trainable.supervised_trainer.train_holdout_validation", {
 		  ["max_epochs"] = "Maximum number of epochs",
 		  ["stopping_criterion"] = "A predicate function which "..
 		  "returns true if stopping criterion, false otherwise. "..
-		    "Some basic criterions are implemented at "..
-		    "trainable.stopping_criterions table."..
+		    "Some basic criteria are implemented at "..
+		    "trainable.stopping_criteria table."..
 		    "The criterion function is called as "..
 		    "stopping_criterion({ current_epoch=..., best_epoch=..., "..
 		    "best_val_error=..., train_error=..., "..
@@ -1320,17 +1320,17 @@ function trainable.supervised_trainer:train_wo_validation(t)
 end
 
 -------------------------
--- STOPPING CRITERIONS --
+-- STOPPING CRITERIA --
 -------------------------
-april_set_doc("trainable.stopping_criterions", {
+april_set_doc("trainable.stopping_criteria", {
 		class       = "namespace",
-		summary     = "Table with built-in stopping criterions", })
+		summary     = "Table with built-in stopping criteria", })
 
-trainable.stopping_criterions = trainable.stopping_criterions or {}
+trainable.stopping_criteria = trainable.stopping_criteria or {}
 
 --------------------------------------------------------------------------
 
-april_set_doc("trainable.stopping_criterions.make_max_epochs_wo_imp_absolute", {
+april_set_doc("trainable.stopping_criteria.make_max_epochs_wo_imp_absolute", {
 		class       = "function",
 		summary     = "Returns a stopping criterion based on absolute loss.",
 		description = 
@@ -1341,7 +1341,7 @@ april_set_doc("trainable.stopping_criterions.make_max_epochs_wo_imp_absolute", {
 		params = { "Absolute maximum difference (abs_max)" },
 		outputs = { "A stopping criterion function" }, })
 
-function trainable.stopping_criterions.make_max_epochs_wo_imp_absolute(abs_max)
+function trainable.stopping_criteria.make_max_epochs_wo_imp_absolute(abs_max)
   local f = function(params)
     return (params.current_epoch - params.best_epoch) >= abs_max
   end
@@ -1350,7 +1350,7 @@ end
 
 --------------------------------------------------------------------------
 
-april_set_doc("trainable.stopping_criterions.make_max_epochs_wo_imp_relative", {
+april_set_doc("trainable.stopping_criteria.make_max_epochs_wo_imp_relative", {
 		class       = "function",
 		summary     = "Returns a stopping criterion based on relative loss.",
 		description = 
@@ -1362,7 +1362,7 @@ april_set_doc("trainable.stopping_criterions.make_max_epochs_wo_imp_relative", {
 		params = { "Relative maximum difference (rel_max)" },
 		outputs = { "A stopping criterion function" }, })
 
-function trainable.stopping_criterions.make_max_epochs_wo_imp_relative(rel_max)
+function trainable.stopping_criteria.make_max_epochs_wo_imp_relative(rel_max)
   local f = function(params)
     return not (params.current_epoch/params.best_epoch < rel_max)
   end
